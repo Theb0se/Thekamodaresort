@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shri Sai Villa Hotel & Resorts</title>
+
+    <!-- Bootstrap Css -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap Js -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font awasome -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- aos -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar d-flex align-items-center justify-content-between px-lg-4 px-md-3 px-4 bg-white py-3"
+    >
+      <div class="logo"><a href="#">Sai Villas</a></div>
+      <div class="navlinks">
+        <ul class="list-unstyled d-flex p-0 m-0">
+          <li class="me-5"><a href="#">Home</a></li>
+          <li class="me-5"><a href="#about">About</a></li>
+          <li class="me-5"><a href="#services">Services</a></li>
+          <li class="me-5"><a href="#gellery">Gallery</a></li>
+          <li class="me-5"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+      </div>
+      <div class="hammenu" id="hammenu">
+        <ul class="list-unstyled p-0 m-0">
+          <li class="me-5" onclick="menuOnClick()"><a href="#">Home</a></li>
+          <li class="me-5" onclick="menuOnClick()">
+            <a href="#about">About</a>
+          </li>
+          <li class="me-5" onclick="menuOnClick()">
+            <a href="#services">Services</a>
+          </li>
+          <li class="me-5" onclick="menuOnClick()">
+            <a href="#gellery">Gallery</a>
+          </li>
+          <li class="me-5" onclick="menuOnClick()">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            data-bs-interval="2000"
+            style="background-image: url(assets/img/ht1.jpg)"
+          ></div>
+          <div
+            class="carousel-item"
+            data-bs-interval="2000"
+            style="background-image: url(assets/img/ht2.jpg)"
+          ></div>
+          <div
+            class="carousel-item"
+            data-bs-interval="2000"
+            style="background-image: url(assets/img/ht3.jpg)"
+          ></div>
+          <div
+            class="carousel-item"
+            data-bs-interval="2000"
+            style="background-image: url(assets/img/ht4.jpg)"
+          ></div>
+        </div>
+      </div>
+
+      <div class="welcome" data-aos="zoom-in" data-aos-duration="500">
+        <div class="wc">
+          <h5>
+            Welcome To
+            <b style="color: #d8993b; font-weight: 600">Sai Villas</b> Hotels &
+            Resorts.
+          </h5>
+          <p>
+            We live for vacationers and travelers who love a good deal, fun, and
+            adventure
+          </p>
+          <div class="buttons">
+            <button class="callNow">
+              <a href="tel:9754472611">Call Now</a>
+            </button>
+            <button class="Direction">Direction</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- midnabar -->
+    <section class="midBar">
+      <h4 class="m-0">Sai Villas - Experience the finest hospitality</h4>
+      <p>
+        Surprising people with joy, and celebrating life’s moments. That’s what
+        we do
+      </p>
+      <div class="contact d-flex justify-content-center mt-4">
+        <a href="#" class="me-4"
+          ><span class="fa-solid fa-phone"></span>9754472611 | Reservation &
+          Queries</a
+        >
+        <a href="#"
+          ><span class="fa-solid fa-envelope"></span>bookings@saivillas.com</a
+        >
+      </div>
+    </section>
+
+    <section
+      class="aboutus px-lg-5 px-3 px-md-3 mt-5 d-flex justify-content-center"
+      id="about"
+      data-aos="fade-up"
+    >
+      <div class="img">
+        <img src="assets/img/ht3.jpg" alt="" />
+      </div>
+      <div class="text">
+        <p class="heading">About Us</p>
+        <span class="bar"></span>
+        <p class="caption">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+          quasi dignissimos hic, veritatis odio aliquid sit suscipit placeat
+          expedita nisi! Animi ipsa iusto vitae qui amet unde placeat dolore
+          tenetur eum quos laudantium maxime architecto magni praesentium quam
+          asperiores libero suscipit, necessitatibus exercitationem quod, autem
+          ad minima veritatis! Harum, minus facilis quis excepturi suscipit
+          dolorem sapiente quia dolor neque voluptate eaque sunt non deleniti
+          inventore porro consectetur eius nisi error eligendi expedita sint
+          alias dignissimos, ut fuga? Sunt corrupti ipsa cupiditate eum, quo
+          unde sapiente atque! Cumque exercitationem eaque mollitia illum id
+          illo modi, dolor, aliquam, ut atque recusandae odio!
+        </p>
+      </div>
+    </section>
+    <section
+      class="aboutus amin px-lg-5 px-3 px-md-3 d-flex justify-content-center"
+      data-aos="fade-up"
+    >
+      <div class="text">
+        <p class="heading">Aminities</p>
+        <span class="bar"></span>
+        <p class="caption">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+          quasi dignissimos hic, veritatis odio aliquid sit suscipit placeat
+          expedita nisi! Animi ipsa iusto vitae qui amet unde placeat dolore
+          tenetur eum quos laudantium maxime architecto magni praesentium.
+        </p>
+
+        <div class="icons">
+          <div class="row row-cols-2 p-0 m-0">
+            <div class="col">
+              <img
+                src="assets/img/icon-3.png"
+                alt=""
+                class="aminitIcon"
+              />Restaurant & Bar
+            </div>
+            <div class="col">
+              <img src="assets/img/icon-1.png" alt="" class="aminitIcon" />Pool
+              And Table Tennis
+            </div>
+            <div class="col">
+              <img
+                src="assets/img/icon-2.png"
+                alt=""
+                class="aminitIcon"
+              />Swimming Pool
+            </div>
+
+            <div class="col">
+              <img
+                src="assets/img/icon-4.png"
+                alt=""
+                class="aminitIcon"
+              />Health Club
+            </div>
+            <div class="col">
+              <img src="assets/img/icon-5.png" alt="" class="aminitIcon" />Kids
+              Corner
+            </div>
+            <div class="col">
+              <img src="assets/img/icon-9.png" alt="" class="aminitIcon" />Car
+              Parking
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="img">
+        <img
+          src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services" data-aos="fade-up">
+      <h3 class="heading text-center text-capitalize">
+        <p>Services</p>
+        <span class="bar"></span>
+      </h3>
+
+      <div
+        class="serviceGrid d-flex align-items-center mx-2 mx-lg-2 mx-md-3 justify-content-center p-4"
+      >
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box">
+              <i class="bi bi-briefcase"></i>
+              <h4>Lorem Ipsum</h4>
+              <p>
+                Voluptatum deleniti atque corrupti quos dolores et quas
+                molestias excepturi sint occaecati cupiditate non provident
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-card-checklist"></i>
+              <h4>Lorem Ipsum</h4>
+              <p>
+                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat tarad limino ata
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-bar-chart"></i>
+              <h4>Lorem Ipsum</h4>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-binoculars"></i>
+              <h4>Lorem Ipsum</h4>
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery -->
+
+    <section
+      class="gellery px-lg-5 px-3 px-md-4"
+      id="gellery"
+      data-aos="fade-up"
+    >
+      <!-- Gallery -->
+
+      <div class="heading">
+        <p>Gallery</p>
+        <span class="bar"></span>
+      </div>
+
+      <div class="row px-lg-5 px-3 px-md-4">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img
+            src="https://images.unsplash.com/photo-1552858725-a19e7fcd3ac4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Boat on Calm Water"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Wintry Mountain Landscape"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1580041065738-e72023775cdc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Boat on Calm Water"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="https://images.unsplash.com/photo-1657937322212-2970a841a5f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Mountains in the Clouds"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1569335468885-d7d1a41e570c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Boat on Calm Water"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1584132869994-873f9363a562?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Mountains in the Clouds"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="https://images.unsplash.com/photo-1606402179428-a57976d71fa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Waves at Sea"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Yosemite National Park"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1569335468885-d7d1a41e570c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Boat on Calm Water"
+          />
+        </div>
+      </div>
+      <!-- Gallery -->
+    </section>
+
+    <!-- Want something -->
+
+    <section class="justCall">
+      <div class="blur">
+        <h5>Want To Ask Something , Just Call</h5>
+        <button>
+          <a href="tel:9754472611"
+            ><span><i class="fa-solid fa-phone"></i></span> 9754472611</a
+          >
+        </button>
+      </div>
+    </section>
+
+    <!-- ContactUS -->
+    <section class="contact" id="contact">
+      <div
+        class="contactgrid d-flex justify-content-center px-lg-4 px-md-3 px-1"
+      >
+        <div class="row w-100">
+          <div class="col-lg-4 col-md-6 contactdt">
+            <div class="footer-info">
+              <h3>Sai Villas Hotel & Resorts</h3>
+              <p>
+                A108 Brahm Street <br />
+                Ambikapur , 479001<br /><br />
+                <strong>Phone:</strong> +91 9754472611<br />
+                <strong>Email:</strong> info@saivillas.com<br />
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="#" class="facebook"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#" class="instagram"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i>
+                <a href="#">Marrige Garden</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i>
+                <a href="#">Party Hall</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i>
+                <a href="#">Meeting Hall</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i>
+                <a href="#">Relaxing Area</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i>
+                <a href="#">Huge Parking</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i>
+                <a href="#">Swimming Pool</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i>
+                <a href="#">Fitness And Wellness Center</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i>
+                <a href="#">Kids Play Area</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6 footer-links useful">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i> <a href="#">Home</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i>
+                <a href="#about">About us</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i>
+                <a href="#gellery">Gallery</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-chevron-right"></i>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Copyright -->
+    <footer>
+      <p class="copy text-center">
+        © Copyright <b>Sai Villas Hotel & Resorts</b>. All Rights Reserved
+      </p>
+
+      <p class="text-center">
+        Designed And Developed By
+        <a href="https://theb0se.com/"><b>Rishabh Bose</b></a>
+      </p>
+    </footer>
+    <div class="scrollToTop" id="scrollTop">
+      <a href="#" style="color: #fff; font-size: 18px">
+        <i class="fa-solid fa-arrow-up"></i
+      ></a>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // show hide scrollTo tp
+      window.addEventListener(
+        "scroll",
+        function (event) {
+          var top = this.scrollY,
+            left = this.scrollX;
+          var scrollToTop = document.getElementById("scrollTop");
+
+          if (top >= 200) {
+            const list = scrollToTop.classList;
+            list.add("scrollToTopShow");
+          } else {
+            const list = scrollToTop.classList;
+            list.remove("scrollToTopShow");
+          }
+        },
+        false
+      );
+
+      // hammenu
+      function menuOnClick() {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("hammenu").classList.toggle("hammenuOpen");
+      }
+    </script>
+  </body>
+</html>
