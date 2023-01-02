@@ -4,34 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shri Sai Villa Hotel & Resorts</title>
-
-    <!-- Bootstrap Css -->
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
+    <title>
+      The Kamoda Resrot | Best Hotel & Resort In Ambikapur Chhattisgarh
+    </title>
+    <meta
+      name="description"
+      content="The Kamoda Resort is the best hotel and resort in ambikapur Chhattisgarh."
+    />
+    <meta
+      name="keywords"
+      content="best hotel in abmikapur, best resrot in ambikapur , hotel near mainpat , hotel near me , hotel in ambikapur"
     />
 
+    <!-- favicon -->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
-      crossorigin="anonymous"
+      rel="shortcut icon"
+      href="assets/img/mailLOgo.png"
+      type="image/x-icon"
     />
-
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Bootstrap Js -->
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
 
     <!-- font awasome -->
     <link
@@ -40,22 +30,43 @@
       type="text/css"
     />
 
-    <!-- aos -->
+    <!-- Bootstrap Css -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="aos/aos.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <nav
-      class="navbar d-flex align-items-center justify-content-between px-lg-4 px-md-3 px-4 bg-white py-3"
+      class="navbar d-flex align-items-center justify-content-between"
+      id="navbar"
     >
-      <div class="logo"><a href="#">Sai Villas</a></div>
+      <div class="logo">
+        <a href="/"
+          ><img
+            src="assets/img/Logo.png"
+            alt="thekamodersort logo"
+            width="80px"
+        /></a>
+      </div>
       <div class="navlinks">
         <ul class="list-unstyled d-flex p-0 m-0">
-          <li class="me-5"><a href="#">Home</a></li>
-          <li class="me-5"><a href="#about">About</a></li>
-          <li class="me-5"><a href="#services">Services</a></li>
-          <li class="me-5"><a href="#gellery">Gallery</a></li>
-          <li class="me-5"><a href="#contact">Contact</a></li>
+          <li class="me-4"><a href="/index.html">Home</a></li>
+          <li class="me-4"><a href="/about.html">About</a></li>
+          <li class="me-4"><a href="/rooms.html">Rooms</a></li>
+          <li class="me-4"><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
       </div>
 
@@ -68,436 +79,491 @@
       </div>
       <div class="hammenu" id="hammenu">
         <ul class="list-unstyled p-0 m-0">
-          <li class="me-5" onclick="menuOnClick()"><a href="#">Home</a></li>
           <li class="me-5" onclick="menuOnClick()">
-            <a href="#about">About</a>
+            <a href="/index.html">Home</a>
           </li>
           <li class="me-5" onclick="menuOnClick()">
-            <a href="#services">Services</a>
+            <a href="/about.html">About</a>
           </li>
           <li class="me-5" onclick="menuOnClick()">
-            <a href="#gellery">Gallery</a>
+            <a href="/rooms.html">Rooms</a>
           </li>
           <li class="me-5" onclick="menuOnClick()">
-            <a href="#contact">Contact</a>
+            <a href="/gallery.html">Gallery</a>
+          </li>
+
+          <li class="me-5" onclick="menuOnClick()">
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li class="me-5" onclick="menuOnClick()">
+            <a href="tel:8516017111"
+              ><div class="book">
+                <button>Book Now →</button>
+              </div></a
+            >
           </li>
         </ul>
       </div>
     </nav>
     <!-- Hero Section -->
-    <section class="hero">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div
-            class="carousel-item active"
-            data-bs-interval="2000"
-            style="background-image: url(assets/img/ht1.jpg)"
-          ></div>
-          <div
-            class="carousel-item"
-            data-bs-interval="2000"
-            style="background-image: url(assets/img/ht2.jpg)"
-          ></div>
-          <div
-            class="carousel-item"
-            data-bs-interval="2000"
-            style="background-image: url(assets/img/ht3.jpg)"
-          ></div>
-          <div
-            class="carousel-item"
-            data-bs-interval="2000"
-            style="background-image: url(assets/img/ht4.jpg)"
-          ></div>
-        </div>
-      </div>
-
-      <div class="welcome" data-aos="zoom-in" data-aos-duration="500">
+    <section class="hero" data-aos="fade-right">
+      <div class="welcome">
         <div class="wc">
-          <h5>
-            Welcome To
-            <b style="color: #d8993b; font-weight: 600">Sai Villas</b> Hotels &
-            Resorts.
-          </h5>
-          <p>
-            We live for vacationers and travelers who love a good deal, fun, and
-            adventure
+          <h1 data-aos="fade-right" data-aos-duration="900">
+            Welcome to
+            <br />
+            The Kamoda Resort
+          </h1>
+          <!-- <p>
+            The Most Luxurious Resort And The Best Wedding Destination For The
+            Best Arrangement For Every Occasion.
+          </p> -->
+          <p data-aos="fade-right" data-aos-duration="900">
+            Luxurious Room | Big Party Lawn | Swimming Pool | Pool Side
+            Restaurant | Biggest Parking |
           </p>
           <div class="buttons">
             <button class="callNow">
-              <a href="tel:9754472611">Call Now</a>
+              <a href="tel:8516017111">Book Now</a>
             </button>
-            <button class="Direction">Direction</button>
+            <button class="Direction">
+              <a href="https://goo.gl/maps/SRT7SQrSSMuNaamDA">Get Directions</a>
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- midnabar -->
-    <section class="midBar">
-      <h4 class="m-0">Sai Villas - Experience the finest hospitality</h4>
+    <!-- About Us -->
+    <section
+      class="aboutus mt-5"
+      id="about"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
+      <div class="heading">
+        <p>A little about us</p>
+        <h2>
+          LOCATED ON THE CALM PLACE OF AMBIKAPUR, <br />
+          A DELIGHTFUL EXPERIENCE
+        </h2>
+      </div>
+      <div class="aboutDetails">
+        <div class="img">
+          <img src="assets/glry/31.jpg" alt="" />
+        </div>
+        <div class="text">
+          <p>
+            Experience the best service and accommodation in a relaxing, natural
+            environment. Stay at Hotel to escape your daily routine! A wide
+            variety of rooms for all budgets, with a range of luxury rooms to
+            suit any budget, there is something for everyone at Hotel. Choose
+            from our executive , Premium club Family club and The Kamoda suites
+            as well as our standard rooms.
+          </p>
+
+          <p>
+            The hotel and resort you deserve! Luxury rooms and suites, from
+            large luxury suites to spacious rooms with spectacular views, we
+            have the perfect room for all budgets. Our picturesque surroundings
+            will make your stay even more enjoyable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- we offer -->
+    <section class="weoffer" data-aos="fade-up" data-aos-duration="1000">
+      <div class="heading">
+        <h1>What do we offers</h1>
+      </div>
+      <div class="scrollBtn d-flex justify-content-end w-100">
+        <div class="left" onclick="scrollToLeft()">
+          <i class="fa-regular fa-chevron-left"></i>
+        </div>
+        <div class="right" onclick="scrollToRight()">
+          <i class="fa-regular fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class="crousal" id="crousalDiv">
+        <div class="d-flex">
+          <div class="offerItem">
+            <div class="img">
+              <img src="assets/glry/Suite 5.jpg" alt="kamoda room" />
+            </div>
+            <div class="text">
+              <h1>Luxurious Rooms</h1>
+              <p>Your comfort is our concern Fresh renovation Helpful staff</p>
+            </div>
+          </div>
+          <div class="offerItem">
+            <div class="img">
+              <img src="assets/glry/11.jpg" alt="kamoda room" />
+            </div>
+            <div class="text">
+              <h1>Big Party Lawn</h1>
+              <p>Huge Party Lawn with all the amenities</p>
+            </div>
+          </div>
+
+          <div class="offerItem">
+            <div class="img">
+              <img
+                src="https://static.toiimg.com/photo/51076300.cms"
+                alt="kamoda room"
+              />
+            </div>
+            <div class="text">
+              <h1>Multi cuisine Restaurant</h1>
+              <p>Multi Cuisine Restaurant right inside our resort.</p>
+            </div>
+          </div>
+          <div class="offerItem">
+            <div class="img">
+              <img
+                src="https://media.istockphoto.com/id/1249206724/photo/banquet-catering-buffet-food.jpg?s=612x612&w=0&k=20&c=EDQZDZDQYeWT0UYasMivgDXwEa-QWPWEQn62szACVVM="
+                alt="kamoda room"
+              />
+            </div>
+            <div class="text">
+              <h1>Banquet Hall</h1>
+              <p>Multiple Banquet Hall Available as per your Need.</p>
+            </div>
+          </div>
+          <div class="offerItem">
+            <div class="img">
+              <img
+                src="https://cf.bstatic.com/images/hotel/840x460/357/357728570.jpg"
+                alt="kamoda room"
+              />
+            </div>
+            <div class="text">
+              <h1>Meeting Hall</h1>
+              <p>Multipurpose Meeting Hall With Great Lighting and Services</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="midBar" data-aos="fade-up" data-aos-duration="1000">
+      <h4 class="m-0">The Kamoda Resrot | Best Hotel & Resort In Ambikapur</h4>
       <p>
         Surprising people with joy, and celebrating life’s moments. That’s what
         we do
       </p>
       <div class="contact d-flex justify-content-center mt-4">
-        <a href="#" class="me-4"
-          ><span class="fa-solid fa-phone"></span>9754472611 | Reservation &
+        <a href="tel:8516017111" class="me-4"
+          ><span class="fa-solid fa-phone"></span>9981171071 | Reservation &
           Queries</a
         >
-        <a href="#"
-          ><span class="fa-solid fa-envelope"></span>bookings@saivillas.com</a
+        <a href="mailto:thekamodaresort@gmail.com"
+          ><span class="fa-solid fa-envelope"></span
+          >thekamodaresort@gmail.com</a
         >
       </div>
     </section>
 
-    <section
-      class="aboutus px-lg-5 px-3 px-md-3 mt-5 d-flex justify-content-center"
-      id="about"
-      data-aos="fade-up"
-    >
-      <div class="img">
-        <img src="assets/img/ht3.jpg" alt="" />
-      </div>
-      <div class="text">
-        <p class="heading">About Us</p>
-        <span class="bar"></span>
-        <p class="caption">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
-          quasi dignissimos hic, veritatis odio aliquid sit suscipit placeat
-          expedita nisi! Animi ipsa iusto vitae qui amet unde placeat dolore
-          tenetur eum quos laudantium maxime architecto magni praesentium quam
-          asperiores libero suscipit, necessitatibus exercitationem quod, autem
-          ad minima veritatis! Harum, minus facilis quis excepturi suscipit
-          dolorem sapiente quia dolor neque voluptate eaque sunt non deleniti
-          inventore porro consectetur eius nisi error eligendi expedita sint
-          alias dignissimos, ut fuga? Sunt corrupti ipsa cupiditate eum, quo
-          unde sapiente atque! Cumque exercitationem eaque mollitia illum id
-          illo modi, dolor, aliquam, ut atque recusandae odio!
-        </p>
-      </div>
-    </section>
-    <section
-      class="aboutus amin px-lg-5 px-3 px-md-3 d-flex justify-content-center"
-      data-aos="fade-up"
-    >
-      <div class="text">
-        <p class="heading">Aminities</p>
-        <span class="bar"></span>
-        <p class="caption">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
-          quasi dignissimos hic, veritatis odio aliquid sit suscipit placeat
-          expedita nisi! Animi ipsa iusto vitae qui amet unde placeat dolore
-          tenetur eum quos laudantium maxime architecto magni praesentium.
-        </p>
-
-        <div class="icons">
-          <div class="row row-cols-2 p-0 m-0">
-            <div class="col">
-              <img
-                src="assets/img/icon-3.png"
-                alt=""
-                class="aminitIcon"
-              />Restaurant & Bar
-            </div>
-            <div class="col">
-              <img src="assets/img/icon-1.png" alt="" class="aminitIcon" />Pool
-              And Table Tennis
-            </div>
-            <div class="col">
-              <img
-                src="assets/img/icon-2.png"
-                alt=""
-                class="aminitIcon"
-              />Swimming Pool
-            </div>
-
-            <div class="col">
-              <img
-                src="assets/img/icon-4.png"
-                alt=""
-                class="aminitIcon"
-              />Health Club
-            </div>
-            <div class="col">
-              <img src="assets/img/icon-5.png" alt="" class="aminitIcon" />Kids
-              Corner
-            </div>
-            <div class="col">
-              <img src="assets/img/icon-9.png" alt="" class="aminitIcon" />Car
-              Parking
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="img">
-        <img
-          src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-          alt=""
-        />
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section class="services" id="services" data-aos="fade-up">
-      <h3 class="heading text-center text-capitalize">
-        <p>Services</p>
-        <span class="bar"></span>
-      </h3>
-
+    <!-- Restaurent -->
+    <section class="swad">
       <div
-        class="serviceGrid d-flex align-items-center mx-2 mx-lg-2 mx-md-3 justify-content-center p-4"
-      >
-        <div class="row">
-          <div class="col-md-6">
-            <div class="icon-box">
-              <i class="bi bi-briefcase"></i>
-              <h4>Lorem Ipsum</h4>
-              <p>
-                Voluptatum deleniti atque corrupti quos dolores et quas
-                molestias excepturi sint occaecati cupiditate non provident
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="bi bi-card-checklist"></i>
-              <h4>Lorem Ipsum</h4>
-              <p>
-                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat tarad limino ata
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="bi bi-bar-chart"></i>
-              <h4>Lorem Ipsum</h4>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="bi bi-binoculars"></i>
-              <h4>Lorem Ipsum</h4>
-              <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        class="image-bg bg-fixed bg-no-repeat bg-cover"
+        data-background="images/bgs/rs10.jpg"
+        style="background-image: url('assets/glry/')"
+      ></div>
     </section>
 
     <!-- gallery -->
 
-    <section
-      class="gellery px-lg-5 px-3 px-md-4"
+    <!-- <section
+      class="gellery"
       id="gellery"
       data-aos="fade-up"
+      data-aos-duration="1000"
     >
-      <!-- Gallery -->
 
       <div class="heading">
-        <p>Gallery</p>
-        <span class="bar"></span>
+        <h1>Gallery</h1>
       </div>
 
-      <div class="row px-lg-5 px-3 px-md-4">
-        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-          <img
-            src="https://images.unsplash.com/photo-1552858725-a19e7fcd3ac4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-            class="w-100 shadow-1-strong rounded mb-4"
-            alt="Boat on Calm Water"
-          />
-
-          <img
-            src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
-            class="w-100 shadow-1-strong rounded mb-4"
-            alt="Wintry Mountain Landscape"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1580041065738-e72023775cdc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            class="w-100 shadow-1-strong rounded mb-4"
-            alt="Boat on Calm Water"
-          />
-        </div>
-
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <img
-            src="https://images.unsplash.com/photo-1657937322212-2970a841a5f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
-            class="w-100 shadow-1-strong rounded mb-4"
-            alt="Mountains in the Clouds"
-          />
-
-          <img
-            src="https://images.unsplash.com/photo-1569335468885-d7d1a41e570c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-            class="w-100 shadow-1-strong rounded mb-4"
-            alt="Boat on Calm Water"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1584132869994-873f9363a562?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            class="w-100 shadow-1-strong rounded mb-4"
-            alt="Mountains in the Clouds"
-          />
-        </div>
-
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <img
-            src="https://images.unsplash.com/photo-1606402179428-a57976d71fa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            class="w-100 shadow-1-strong rounded mb-4"
-            alt="Waves at Sea"
-          />
-
-          <img
-            src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            class="w-100 shadow-1-strong rounded mb-4"
-            alt="Yosemite National Park"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1569335468885-d7d1a41e570c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-            class="w-100 shadow-1-strong rounded mb-4"
-            alt="Boat on Calm Water"
-          />
+      <div id="container">
+        <div class="photobanner">
+          <img src="assets/glry/1.jpg" alt="thekamodersort" />
+          <img src="assets/glry/2.jpg" alt="thekamodersort" />
+          <img src="assets/glry/4.jpg" alt="thekamodersort" />
+          <img src="assets/glry/5.jpg" alt="thekamodersort" />
+          <img src="assets/glry/24.jpg" alt="thekamodersort" />
+          <img src="assets/glry/25.jpg" alt="thekamodersort" />
+          <img src="assets/glry/26.jpg" alt="thekamodersort" />
+          <img src="assets/glry/31.jpg" alt="thekamodersort" />
+          <img src="assets/glry/room3.jpg" alt="thekamodersort" />
+          <img src="assets/glry/7.jpg" alt="thekamodersort" />
+          <img src="assets/glry/room2.jpg" alt="thekamodersort" />
+          <img src="assets/glry/8.jpg" alt="thekamodersort" />
+          <img src="assets/glry/9.jpg" alt="thekamodersort" />
+          <img src="assets/glry/10.jpg" alt="thekamodersort" />
+          <img src="assets/glry/11.jpg" alt="thekamodersort" />
+          <img src="assets/glry/room.jpg" alt="thekamodersort" />
         </div>
       </div>
-      <!-- Gallery -->
-    </section>
+    </section> -->
 
-    <!-- Want something -->
+    <!-- Gallery -->
 
-    <section class="justCall">
-      <div class="blur">
-        <h5>Want To Ask Something , Just Call</h5>
-        <button>
-          <a href="tel:9754472611"
-            ><span><i class="fa-solid fa-phone"></i></span> 9754472611</a
+    <!-- aminities -->
+    <section class="services">
+      <h1 style="text-align: center">
+        <span style="color: var(--gold)">Experiences</span> And
+        <span style="color: var(--gold)">Services</span>.
+      </h1>
+      <p style="text-align: center">Services During Your Stay.</p>
+
+      <div class="container mt-5">
+        <div class="row">
+          <div
+            class="col-lg-4 side"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           >
-        </button>
+            <div class="srvc d-flex justify-content-left">
+              <div class="img me-3">
+                <img src="assets/services/reception.png" width="30px" />
+              </div>
+              <div class="dtls">
+                <h1>Reception 24/7</h1>
+                <p>We provide 24 * 7 reception services.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mid" data-aos="fade-up" data-aos-duration="1000">
+            <div class="srvc d-flex justify-content-left">
+              <div class="img me-3">
+                <img src="assets/services/wifi.png" width="30px" />
+              </div>
+              <div class="dtls">
+                <h1>Highspeed Wifi</h1>
+                <p>Enjoy our complimentary high speed wifi!</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 side"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="srvc d-flex justify-content-left">
+              <div class="img me-3">
+                <img src="assets/services/housekeeping.png" width="30px" />
+              </div>
+              <div class="dtls">
+                <h1>Housekeeping</h1>
+                <p>Comeback to a neat and clean room.</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 side bbnone"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="srvc d-flex justify-content-left">
+              <div class="img me-3">
+                <img src="assets/services/dinner.png" width="30px" />
+              </div>
+              <div class="dtls">
+                <h1>In Room Dining</h1>
+                <p>Choicest food and beverage served in your room.</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 mid bbnone"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="srvc d-flex justify-content-left">
+              <div class="img me-3">
+                <img src="assets/services/breakfast.png" width="30px" />
+              </div>
+              <div class="dtls">
+                <h1>Breakfast</h1>
+                <p>Sumptuous breakfast Banquet Served.</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 side bbnone"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="srvc d-flex justify-content-left">
+              <div class="img me-3">
+                <img src="assets/services/icons8-parking-64.png" width="30px" />
+              </div>
+              <div class="dtls">
+                <h1>Ample Parking</h1>
+                <p>Convenient parking right outside our hotel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ContactUS -->
-    <section class="contact" id="contact">
-      <div
-        class="contactgrid d-flex justify-content-center px-lg-4 px-md-3 px-1"
-      >
-        <div class="row w-100">
-          <div class="col-lg-4 col-md-6 contactdt">
-            <div class="footer-info">
-              <h3>Sai Villas Hotel & Resorts</h3>
-              <p>
-                A108 Brahm Street <br />
-                Ambikapur , 479001<br /><br />
-                <strong>Phone:</strong> +91 9754472611<br />
-                <strong>Email:</strong> info@saivillas.com<br />
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"
-                  ><i class="fa-brands fa-facebook"></i
-                ></a>
-                <a href="#" class="facebook"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-                <a href="#" class="instagram"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-              </div>
-            </div>
-          </div>
+    <section class="contact">
+      <div class="heading text-center">
+        <h1>Contact Us</h1>
+        <p>We will be happy to answer all your questions and help you.</p>
+      </div>
 
-          <div class="col-lg-4 col-md-6 col-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i>
-                <a href="#">Marrige Garden</a>
-              </li>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i>
-                <a href="#">Party Hall</a>
-              </li>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i>
-                <a href="#">Meeting Hall</a>
-              </li>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i>
-                <a href="#">Relaxing Area</a>
-              </li>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i>
-                <a href="#">Huge Parking</a>
-              </li>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i>
-                <a href="#">Swimming Pool</a>
-              </li>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i>
-                <a href="#">Fitness And Wellness Center</a>
-              </li>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i>
-                <a href="#">Kids Play Area</a>
-              </li>
-            </ul>
+      <div class="row aos-init aos-animate">
+        <div class="col-lg-6">
+          <div class="info-box mb-4" data-aos="fade-up" data-aos-delay="100">
+            <h3>
+              <span> <i class="fa-regular fa-location-dot"></i></span> Address
+            </h3>
+            <p>
+              <a href="https://goo.gl/maps/k52BfEUWxPUiiwfk8"
+                >Banaras Road , Gandhinagar , Ambikapur , Chhattisgrah</a
+              >
+            </p>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 footer-links useful">
-            <h4>Useful Links</h4>
-            <ul>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i> <a href="#">Home</a>
-              </li>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i>
-                <a href="#about">About us</a>
-              </li>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i>
-                <a href="#services">Services</a>
-              </li>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i>
-                <a href="#gellery">Gallery</a>
-              </li>
-              <li>
-                <i class="fa-regular fa-chevron-right"></i>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="info-box mb-4">
+            <h3>
+              <span><i class="fa-regular fa-envelope"></i></span> Email
+            </h3>
+            <p>
+              <a href="mailto:thekamodaresort@gmail.com"
+                >thekamodaresort@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="info-box mb-4">
+            <h3>
+              <span> <i class="fa-duotone fa-phone"></i></span> Telephone
+            </h3>
+            <p><a href="tel:8516017111">8516017111 || 9981171071</a></p>
+          </div>
+        </div>
+        <div
+          class="col-lg col-md-6 d-flex align-items-center justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="map mb-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d917.1114483169075!2d83.1752117!3d23.1539243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3989a1f92e923eed%3A0xaa35937b81f192a0!2sTHE%20KAMODA%20RESORT!5e0!3m2!1sen!2sin!4v1671435646232!5m2!1sen!2sin"
+              style="border: 0"
+              height="260px"
+              allowfullscreen="true"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Copyright -->
     <footer>
-      <p class="copy text-center">
-        © Copyright <b>Sai Villas Hotel & Resorts</b>. All Rights Reserved
+      <div class="footerServices mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm d-flex justify-content-center mb-5">
+              <div class="address w-75">
+                <h1>The kamoda resort</h1>
+                <h2>Banaras road Gandhinager, Ambikapur , Chhattisgrah</h2>
+                <div class="icons">
+                  <a href="#" class="me-3"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="me-3"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#" class="me-3"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" class="me-3"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm d-flex justify-content-center mb-5">
+              <div class="con w-75">
+                <h1>Contact</h1>
+                <p>9981171071 <span>( For Reservation )</span></p>
+                <p>8516017111 <span>( For Reservation )</span></p>
+                <p>8516017222 <span>( Restaurant )</span></p>
+                <p>8516017333 <span>( Support & Complain )</span></p>
+                <p>thekamodaresort@gmail.com</p>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-6 col-lg-4 d-flex justify-content-center mb-5"
+            >
+              <div class="address useful w-75">
+                <h1>Useful Links</h1>
+                <ul class="list-unstyled">
+                  <li class="me-4"><a href="/">Home</a></li>
+                  <li class="me-4"><a href="/about.html">About</a></li>
+                  <li class="me-4"><a href="/rooms.html">Rooms</a></li>
+                  <li class="me-4"><a href="/gallery.html">Gallery</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="copy text-center mt-3 whitecolor">
+        © Copyright <b>The kamoda Resort</b>. All Rights Reserved
       </p>
 
-      <p class="text-center">
+      <p class="text-center copy">
         Designed And Developed By
         <a href="https://theb0se.com/"><b>Rishabh Bose</b></a>
       </p>
     </footer>
-    <div class="scrollToTop" id="scrollTop">
-      <a href="#" style="color: #fff; font-size: 18px">
-        <i class="fa-solid fa-arrow-up"></i
-      ></a>
-    </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <a href="tel:8516017111">
+      <div class="bookNow" data-aos="fade-left" data-aos-duration="1000">
+        Book <br />
+        Now
+      </div></a
+    >
+
+    <a
+      href="https://wa.me/+918516017111"
+      class="whatsapp"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      data-bs-title="Message Us ."
+    >
+      <div class="whatappPng">
+        <img src="assets/whatsapp.svg" alt="thekamodaresort" width="60" />
+      </div>
+    </a>
+
+    <script src="aos/aos.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
     <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+
       AOS.init();
+
+      var loc = window.location.pathname;
+      console.log(loc);
 
       // show hide scrollTo tp
       window.addEventListener(
@@ -505,14 +571,14 @@
         function (event) {
           var top = this.scrollY,
             left = this.scrollX;
-          var scrollToTop = document.getElementById("scrollTop");
+          var nav = document.getElementById("navbar");
 
-          if (top >= 200) {
-            const list = scrollToTop.classList;
-            list.add("scrollToTopShow");
+          if (top >= 300) {
+            const list = nav.classList;
+            list.add("navbarScrold");
           } else {
-            const list = scrollToTop.classList;
-            list.remove("scrollToTopShow");
+            const list = nav.classList;
+            list.remove("navbarScrold");
           }
         },
         false
@@ -522,6 +588,15 @@
       function menuOnClick() {
         document.getElementById("menu-bar").classList.toggle("change");
         document.getElementById("hammenu").classList.toggle("hammenuOpen");
+      }
+
+      function scrollToLeft() {
+        var elem = document.getElementById("crousalDiv");
+        elem.scrollLeft -= 350;
+      }
+      function scrollToRight() {
+        var elem = document.getElementById("crousalDiv");
+        elem.scrollLeft += 350;
       }
     </script>
   </body>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Rooms - The Kamoda Resrot | Best Hotel & Resort In Ambikapur Chhattisgarh
+    </title>
+    <meta
+      name="description"
+      content="The Kamoda Resort is the best hotel and resort in ambikapur Chhattisgarh."
+    />
+    <meta
+      name="keywords"
+      content="best hotel in abmikapur, best resrot in ambikapur , hotel near mainpat , hotel near me , hotel in ambikapur"
+    />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/mailLOgo.png"
+      type="image/x-icon"
+    />
+
+    <!-- font awasome -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Bootstrap Css -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="aos/aos.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/rooms.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbarScrold d-flex align-items-center justify-content-between"
+      id="navbar"
+    >
+      <div class="logo">
+        <a href="/"
+          ><img
+            src="assets/img/Logo.png"
+            alt="thekamodersort logo"
+            width="80px"
+        /></a>
+      </div>
+      <div class="navlinks">
+        <ul class="list-unstyled d-flex p-0 m-0">
+          <li class="me-4"><a href="/index.html">Home</a></li>
+          <li class="me-4"><a href="/about.html">About</a></li>
+          <li class="me-4"><a href="/rooms.html">Rooms</a></li>
+          <li class="me-4"><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+      </div>
+      <div class="hammenu" id="hammenu">
+        <ul class="list-unstyled p-0 m-0">
+          <li class="me-5" onclick="menuOnClick()">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="me-5" onclick="menuOnClick()">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="me-5" onclick="menuOnClick()">
+            <a href="/rooms.html">Rooms</a>
+          </li>
+          <li class="me-5" onclick="menuOnClick()">
+            <a href="/gallery.html">Gallery</a>
+          </li>
+
+          <li class="me-5" onclick="menuOnClick()">
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li class="me-5" onclick="menuOnClick()">
+            <a href="tel:9981171071"
+              ><div class="book">
+                <button>Book Now →</button>
+              </div></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="roomsPage">
+      <div class="img">
+        <img src="assets/glry/RoomsBackg.png" alt="thekamodaresort" />
+      </div>
+      <div class="locationBar">
+        <p>Home / <span>Rooms</span></p>
+      </div>
+
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="room">
+              <div class="img d-flex justify-content-center">
+                <div
+                  id="carouselExampleFade"
+                  class="carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/glry/Executive 1.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/glry/Executive 3.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/glry/Executive 24.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/glry/Executive 18.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="text">
+                <h1>Executive Room</h1>
+
+                <a href="#">Book Now</a>
+                <br />
+                <br />
+                <p class="text-justify decs">
+                  A deluxe room provides great luxury and is definitely a
+                  value-for-money option. Guests can enjoy facilities such as
+                  television, telephone, sitting area.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- premium room -->
+          <div class="col-lg-6">
+            <div class="room">
+              <div class="img d-flex justify-content-center">
+                <div
+                  id="premiumCrousal"
+                  class="carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/glry/Premium 1.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/glry/Premium 4.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/glry/Premium 6.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/glry/Premium 8.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#premiumCrousal"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#premiumCrousal"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="text">
+                <h1>Premium Club Room</h1>
+                <a href="#">Book Now</a>
+                <br />
+                <br />
+                <p class="text-justify decs">
+                  The Super Deluxe Room is a spacious and elegant accommodation
+                  furnished with furniture. This air-conditioned room comes with
+                  a single as well as double bed and all modern amenities needed
+                  for a relaxing stay.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Familyclub -->
+          <div class="col-lg-6">
+            <div class="room">
+              <div class="img d-flex justify-content-center">
+                <div
+                  id="FamilyClubCrausal"
+                  class="carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/glry/Family Club 1.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/glry/Family Club 2.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/glry/Famil Club 9.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/glry/Family Club 4.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#FamilyClubCrausal"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#FamilyClubCrausal"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="text">
+                <h1>Family Club Room</h1>
+                <a href="#">Book Now</a>
+                <br />
+                <br />
+                <p class="text-justify decs">
+                  Family Club Room are for people who don't mind shelling out
+                  extra money for added comfort for your family. We provide the
+                  best of facilities for people who love luxury.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- the suit -->
+          <div class="col-lg-6">
+            <div class="room">
+              <div class="img d-flex justify-content-center">
+                <div
+                  id="suitCrousal"
+                  class="carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/glry/Suite 2.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/glry/Suite 3.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/glry/Suite 4.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/glry/Suite 5.jpg"
+                        class="d-block w-100"
+                        alt="thekamodaresort"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#suitCrousal"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#suitCrousal"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="text">
+                <h1>The Kamoda Suite Room</h1>
+
+                <a href="#">Book Now</a>
+                <br />
+                <br />
+                <p class="text-justify decs">
+                  The Kamoda Suite Room Room are well equipped with modern
+                  amenities like dual king size bed, direct dial telephone and
+                  Centralised AC & TV with satellite channels. Bathroom with
+                  regular supply of hot and cold running water is attached with
+                  the rooms.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <footer>
+      <div class="footerServices mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm d-flex justify-content-center mb-5">
+              <div class="address w-75">
+                <h1>The kamoda resort</h1>
+                <h2>Banaras road Gandhinager, Ambikapur , Chhattisgrah</h2>
+                <div class="icons">
+                  <a href="#" class="me-3"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="me-3"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#" class="me-3"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" class="me-3"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm d-flex justify-content-center mb-5">
+              <div class="con w-75">
+                <h1>Contact</h1>
+                <p>9981171071 <span>( For Reservation )</span></p>
+                <p>8516017111 <span>( For Reservation )</span></p>
+                <p>8516017222 <span>( Restaurant )</span></p>
+                <p>8516017333 <span>( Support & Complain )</span></p>
+                <p>thekamodaresort@gmail.com</p>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-6 col-lg-4 d-flex justify-content-center mb-5"
+            >
+              <div class="address useful w-75">
+                <h1>Useful Links</h1>
+                <ul class="list-unstyled">
+                  <li class="me-4"><a href="/">Home</a></li>
+                  <li class="me-4"><a href="/about.html">About</a></li>
+                  <li class="me-4"><a href="/rooms.html">Rooms</a></li>
+                  <li class="me-4"><a href="/gallery.html">Gallery</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="copy text-center mt-3 whitecolor">
+        © Copyright <b>The kamoda Resort</b>. All Rights Reserved
+      </p>
+
+      <p class="text-center copy">
+        Designed And Developed By
+        <a href="https://theb0se.com/"><b>Rishabh Bose</b></a>
+      </p>
+    </footer>
+
+    <a href="tel:9981171071">
+      <div class="bookNow" data-aos="fade-left" data-aos-duration="1000">
+        Book <br />
+        Now
+      </div></a
+    >
+
+    <a
+    href="https://wa.me/+918516017111"
+    class="whatsapp"
+    data-bs-toggle="tooltip"
+    data-bs-placement="left"
+    data-bs-title="Message Us ."
+  >
+    <div class="whatappPng">
+      <img src="assets/whatsapp.svg" alt="thekamodaresort" width="60"/>
+    </div>
+  </a>
+
+    <script src="js/aos/aos.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script>
+      AOS.init();
+
+      var loc = window.location.pathname;
+
+      // show hide scrollTo tp
+
+      // hammenu
+      function menuOnClick() {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("hammenu").classList.toggle("hammenuOpen");
+      }
+
+      function scrollToLeft() {
+        var elem = document.getElementById("crousalDiv");
+        elem.scrollLeft -= 350;
+      }
+      function scrollToRight() {
+        var elem = document.getElementById("crousalDiv");
+        elem.scrollLeft += 350;
+      }
+    </script>
+  </body>
+</html>
