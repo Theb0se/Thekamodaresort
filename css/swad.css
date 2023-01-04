@@ -1,0 +1,85 @@
+.swadMin {
+  padding: 20px 80px;
+  background-color: #fdfdfd;
+}
+
+.swadMin .logo img {
+  width: 160px;
+}
+
+.swadMin .description {
+  margin-top: 40px;
+}
+.swadMin .description p {
+  order: 0 none;
+  padding-left: 19%;
+  padding-right: 19%;
+  text-align: center;
+  font-family: var(--robotoconsider);
+  line-height: 20px;
+}
+
+.swadMin .description span {
+  font-weight: 600;
+  color: var(--gold);
+  font-size: 17px;
+}
+
+.swadMin .description .enq,
+.enq a {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.bookNow {
+  top: 200px;
+}
+
+.photo-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 250px;
+}
+.photo-grid .photoCard {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+}
+
+@media screen and (min-width: 600px) {
+  .grid-tall {
+    grid-row: span 2 / auto;
+  }
+
+  .grid-wide {
+    grid-column: span 2 / auto;
+  }
+}
+@media screen and (max-width: 876px) {
+  .swadMin {
+    padding: 20px 40px;
+  }
+  .swadMin .description p {
+    padding-left: 13%;
+    padding-right: 13%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .swadMin {
+    padding: 20px 20px;
+  }
+  .swadMin .description p {
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .swadMin .description p {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+@media screen and (max-width: 876px) {
+}

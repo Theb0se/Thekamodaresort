@@ -48,6 +48,21 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="topbar">
+      <ul class="list-unstyled m-0 d-flex justify-content-around">
+        <li>
+          <p class="m-0">
+            <span>For Reservation</span> - 8516017111 | 9981171071
+          </p>
+        </li>
+        <li>
+          <p class="m-0"><span>Restaurant </span> - 8516017222</p>
+        </li>
+        <li class="last">
+          <p class="m-0"><span>Support & Complain .</span> - 8516017333</p>
+        </li>
+      </ul>
+    </div>
     <nav
       class="navbar d-flex align-items-center justify-content-between"
       id="navbar"
@@ -58,77 +73,134 @@
             src="assets/img/Logo.png"
             alt="thekamodersort logo"
             width="80px"
-        /></a>
+          />
+          The Kamoda Resort</a
+        >
       </div>
       <div class="navlinks">
         <ul class="list-unstyled d-flex p-0 m-0">
           <li class="me-4"><a href="/index.html">Home</a></li>
           <li class="me-4"><a href="/about.html">About</a></li>
           <li class="me-4"><a href="/rooms.html">Rooms</a></li>
+          <li class="me-4"><a href="/swad.html">Restaurant</a></li>
           <li class="me-4"><a href="/gallery.html">Gallery</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
       </div>
 
       <div id="menu">
-        <div id="menu-bar" onclick="menuOnClick()">
+        <div
+          id="menu-bar"
+          onclick="menuOnClick()"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#staticBackdrop"
+          aria-controls="staticBackdrop"
+        >
           <div id="bar1" class="bar"></div>
           <div id="bar2" class="bar"></div>
           <div id="bar3" class="bar"></div>
         </div>
       </div>
-      <div class="hammenu" id="hammenu">
-        <ul class="list-unstyled p-0 m-0">
-          <li class="me-5" onclick="menuOnClick()">
-            <a href="/index.html">Home</a>
-          </li>
-          <li class="me-5" onclick="menuOnClick()">
-            <a href="/about.html">About</a>
-          </li>
-          <li class="me-5" onclick="menuOnClick()">
-            <a href="/rooms.html">Rooms</a>
-          </li>
-          <li class="me-5" onclick="menuOnClick()">
-            <a href="/gallery.html">Gallery</a>
-          </li>
+      <div
+        class="offcanvas offcanvas-end"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+            onclick="menuOnClick()"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="hammenu" id="hammenu">
+            <ul class="list-unstyled p-0 m-0">
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/index.html">Home</a>
+              </li>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/about.html">About</a>
+              </li>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/rooms.html">Rooms</a>
+              </li>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/swad.html">Restaurant</a>
+              </li>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/gallery.html">Gallery</a>
+              </li>
 
-          <li class="me-5" onclick="menuOnClick()">
-            <a href="/contact.html">Contact</a>
-          </li>
-          <li class="me-5" onclick="menuOnClick()">
-            <a href="tel:8516017111"
-              ><div class="book">
-                <button>Book Now →</button>
-              </div></a
-            >
-          </li>
-        </ul>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/contact.html">Contact</a>
+              </li>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="tel:8516017111"
+                  ><div class="book">
+                    <button>Book Now →</button>
+                  </div></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
+
+    <!-- offcanus -->
+
     <!-- Hero Section -->
-    <section class="hero" data-aos="fade-right">
-      <div class="welcome">
-        <div class="wc">
-          <h1 data-aos="fade-right" data-aos-duration="900">
-            Welcome to
-            <br />
-            The Kamoda Resort
-          </h1>
-          <!-- <p>
-            The Most Luxurious Resort And The Best Wedding Destination For The
-            Best Arrangement For Every Occasion.
-          </p> -->
-          <p data-aos="fade-right" data-aos-duration="900">
-            Luxurious Room | Big Party Lawn | Swimming Pool | Pool Side
-            Restaurant | Biggest Parking |
-          </p>
-          <div class="buttons">
-            <button class="callNow">
-              <a href="tel:8516017111">Book Now</a>
-            </button>
-            <button class="Direction">
-              <a href="https://goo.gl/maps/SRT7SQrSSMuNaamDA">Get Directions</a>
-            </button>
+    <section class="hero" data-bs-ride="carousel">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active crousal-main"
+            data-bs-interval="4000"
+          >
+            <div class="welcome" data-aos="zoom-out">
+              <div class="wc text-center">
+                <img
+                  src="assets/img/Logo.png"
+                  alt="thekamoda Resort"
+                  width="100px"
+                  class="mb-2"
+                />
+                <h1>
+                  Welcome to
+                  <br />
+                  <span style="color: var(--gold)">The Kamoda Resort</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item crousal-rooms" data-bs-interval="4000">
+            <div class="welcome" data-aos="zoom-out">
+              <div class="wc">
+                <h1>
+                  <h1>Executive , Premium , Family and Suit Rooms</h1>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item crousal-rest" data-bs-interval="4000">
+            <div class="welcome" data-aos="zoom-out">
+              <div class="wc text-center">
+                <img
+                  src="assets/img/Swad Logo.png"
+                  alt="Swad Restaurant"
+                  width="140px"
+                />
+                <br />
+                <br />
+                <h1>Fine Dine , Pool Side Restaurant</h1>
+                <h3>Where every bite is a journey.</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -139,7 +211,7 @@
       class="aboutus mt-5"
       id="about"
       data-aos="fade-up"
-      data-aos-duration="500"
+      data-aos-duration="5000"
     >
       <div class="heading">
         <p>A little about us</p>
@@ -154,19 +226,33 @@
         </div>
         <div class="text">
           <p>
-            Experience the best service and accommodation in a relaxing, natural
-            environment. Stay at Hotel to escape your daily routine! A wide
-            variety of rooms for all budgets, with a range of luxury rooms to
-            suit any budget, there is something for everyone at Hotel. Choose
-            from our executive , Premium club Family club and The Kamoda suites
-            as well as our standard rooms.
+            Welcome to The Kamoda Resort, the ultimate destination for
+            relaxation and rejuvenation in Ambikapur. Our luxurious resort is
+            located in a beautiful and serene setting, providing the perfect
+            escape from the hustle and bustle of everyday life.
           </p>
 
           <p>
-            The hotel and resort you deserve! Luxury rooms and suites, from
-            large luxury suites to spacious rooms with spectacular views, we
-            have the perfect room for all budgets. Our picturesque surroundings
-            will make your stay even more enjoyable.
+            In addition to the amenities and activities mentioned above, our
+            resort also offers a variety of events and entertainment options to
+            keep our guests entertained throughout their stay. From live music
+            and performances to themed events and parties, there is always
+            something fun and exciting happening at our resort.
+          </p>
+
+          <p>
+            We also understand that vacations are often a time to disconnect and
+            relax, which is why we offer a variety of peaceful and serene spaces
+            for our guests to unwind and recharge. Whether it's a quiet spot by
+            a cozy corner in our gardens, there is a peaceful spot for everyone
+            at our resort.
+          </p>
+
+          <p>
+            We invite you to come and discover all that the kamoda Resort has to
+            offer. We are confident that you will leave feeling relaxed,
+            rejuvenated, and refreshed, ready to take on the world with renewed
+            energy and vitality.
           </p>
         </div>
       </div>
@@ -246,69 +332,93 @@
       </div>
     </section>
 
-    <section class="midBar" data-aos="fade-up" data-aos-duration="1000">
-      <h4 class="m-0">The Kamoda Resrot | Best Hotel & Resort In Ambikapur</h4>
-      <p>
-        Surprising people with joy, and celebrating life’s moments. That’s what
-        we do
-      </p>
-      <div class="contact d-flex justify-content-center mt-4">
-        <a href="tel:8516017111" class="me-4"
-          ><span class="fa-solid fa-phone"></span>9981171071 | Reservation &
-          Queries</a
-        >
-        <a href="mailto:thekamodaresort@gmail.com"
-          ><span class="fa-solid fa-envelope"></span
-          >thekamodaresort@gmail.com</a
-        >
-      </div>
-    </section>
-
     <!-- Restaurent -->
     <section class="swad">
+      <div class="waveUp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,32L34.3,53.3C68.6,75,137,117,206,122.7C274.3,128,343,96,411,101.3C480,107,549,149,617,165.3C685.7,181,754,171,823,176C891.4,181,960,203,1029,176C1097.1,149,1166,75,1234,53.3C1302.9,32,1371,64,1406,80L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="waveDown">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,32L34.3,53.3C68.6,75,137,117,206,122.7C274.3,128,343,96,411,101.3C480,107,549,149,617,165.3C685.7,181,754,171,823,176C891.4,181,960,203,1029,176C1097.1,149,1166,75,1234,53.3C1302.9,32,1371,64,1406,80L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
       <div
-        class="image-bg bg-fixed bg-no-repeat bg-cover"
-        data-background="images/bgs/rs10.jpg"
-        style="background-image: url('assets/glry/')"
-      ></div>
-    </section>
-
-    <!-- gallery -->
-
-    <!-- <section
-      class="gellery"
-      id="gellery"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-    >
-
-      <div class="heading">
-        <h1>Gallery</h1>
+        class="logo d-flex justify-content-center flex-column align-items-center"
+        data-aos="fade-up"
+        data-aos-duration="5000"
+      >
+        <img src="assets/img/Swad Logo.png" alt="" />
+        <h1 class="text-center">Swad - A Multi Cusine Poolside Restaurent</h1>
       </div>
 
-      <div id="container">
-        <div class="photobanner">
-          <img src="assets/glry/1.jpg" alt="thekamodersort" />
-          <img src="assets/glry/2.jpg" alt="thekamodersort" />
-          <img src="assets/glry/4.jpg" alt="thekamodersort" />
-          <img src="assets/glry/5.jpg" alt="thekamodersort" />
-          <img src="assets/glry/24.jpg" alt="thekamodersort" />
-          <img src="assets/glry/25.jpg" alt="thekamodersort" />
-          <img src="assets/glry/26.jpg" alt="thekamodersort" />
-          <img src="assets/glry/31.jpg" alt="thekamodersort" />
-          <img src="assets/glry/room3.jpg" alt="thekamodersort" />
-          <img src="assets/glry/7.jpg" alt="thekamodersort" />
-          <img src="assets/glry/room2.jpg" alt="thekamodersort" />
-          <img src="assets/glry/8.jpg" alt="thekamodersort" />
-          <img src="assets/glry/9.jpg" alt="thekamodersort" />
-          <img src="assets/glry/10.jpg" alt="thekamodersort" />
-          <img src="assets/glry/11.jpg" alt="thekamodersort" />
-          <img src="assets/glry/room.jpg" alt="thekamodersort" />
+      <div class="swadDiv" data-aos="fade-up" data-aos-duration="5000">
+        <div class="desc d-flex justify-content-center">
+          <p>
+            Welcome to <b>Swad</b>, a multi-cuisine restaurant located within
+            our hotel. We are the perfect choice for food enthusiasts seeking a
+            delightful dining experience. Our restaurant boasts a stunning
+            atmosphere and our staff is dedicated to providing excellent
+            service. Our talented chefs have prepared an extensive selection of
+            diverse dishes for you to enjoy. Come dine with us at Swad in
+            Ambikapur and treat yourself to a meal like no other.
+          </p>
+        </div>
+
+        <div class="imges" data-aos="fade-up" data-aos-duration="5000">
+          <div class="slider" id="track">
+            <div class="track">
+              <div class="slide">
+                <img src="assets/glry/restaurent.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/glry/restaurent.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/glry/restaurent.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/glry/restaurent.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/glry/restaurent.jpg" alt="" />
+              </div>
+
+              <!-- Doubled -->
+
+              <div class="slide">
+                <img src="assets/glry/restaurent.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/glry/restaurent.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/glry/restaurent.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/glry/restaurent.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="assets/glry/restaurent.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="knowMorebtn">
+          <button><a href="/swad.html">Know More →</a></button>
         </div>
       </div>
-    </section> -->
-
-    <!-- Gallery -->
+    </section>
 
     <!-- aminities -->
     <section class="services">
@@ -425,8 +535,9 @@
             </h3>
             <p>
               <a href="https://goo.gl/maps/k52BfEUWxPUiiwfk8"
-                >Banaras Road , Gandhinagar , Ambikapur , Chhattisgrah</a
-              >
+                >RK Nagar , Banaras Road , Gandhinagar , Ambikapur ,
+                Chhattisgrah 497001
+              </a>
             </p>
           </div>
         </div>
@@ -457,9 +568,9 @@
         >
           <div class="map mb-4">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d917.1114483169075!2d83.1752117!3d23.1539243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3989a1f92e923eed%3A0xaa35937b81f192a0!2sTHE%20KAMODA%20RESORT!5e0!3m2!1sen!2sin!4v1671435646232!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.445650415765!2d83.17302121428499!3d23.15392951721768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3989a1ce2fc9e6ed%3A0x2315d130653c336b!2sThe%20Kamoda%20Resort!5e0!3m2!1sen!2sin!4v1672822017913!5m2!1sen!2sin"
+              height="300"
               style="border: 0"
-              height="260px"
               allowfullscreen="true"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -476,19 +587,19 @@
             <div class="col-sm d-flex justify-content-center mb-5">
               <div class="address w-75">
                 <h1>The kamoda resort</h1>
-                <h2>Banaras road Gandhinager, Ambikapur , Chhattisgrah</h2>
+                <h2>
+                  RK Nagar , Banaras road Gandhinager, Ambikapur , Chhattisgrah
+                </h2>
                 <div class="icons">
-                  <a href="#" class="me-3"
+                  <a
+                    href="https://www.facebook.com/thekamodaresort"
+                    class="me-3"
                     ><i class="fa-brands fa-facebook"></i
                   ></a>
-                  <a href="#" class="me-3"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                  <a href="#" class="me-3"
+                  <a
+                    href="https://www.instagram.com/thekamodaresort"
+                    class="me-3"
                     ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                  <a href="#" class="me-3"
-                    ><i class="fa-brands fa-youtube"></i
                   ></a>
                 </div>
               </div>
@@ -496,10 +607,15 @@
             <div class="col-sm d-flex justify-content-center mb-5">
               <div class="con w-75">
                 <h1>Contact</h1>
-                <p>9981171071 <span>( For Reservation )</span></p>
-                <p>8516017111 <span>( For Reservation )</span></p>
-                <p>8516017222 <span>( Restaurant )</span></p>
-                <p>8516017333 <span>( Support & Complain )</span></p>
+                <p>
+                  <span class="highLight">For Reservation </span> - 9981171071 |
+                  8516017111
+                </p>
+
+                <p><span class="highLight">Restaurant </span> - 8516017222</p>
+                <p>
+                  <span class="highLight">Support & Complain</span> - 8516017333
+                </p>
                 <p>thekamodaresort@gmail.com</p>
               </div>
             </div>
@@ -514,6 +630,9 @@
                   <li class="me-4"><a href="/rooms.html">Rooms</a></li>
                   <li class="me-4"><a href="/gallery.html">Gallery</a></li>
                   <li><a href="/contact.html">Contact</a></li>
+                  <li><a href="/terms.html">Terms & Conditions</a></li>
+                  <li><a href="/hotel-policy.html">Hotel-policy</a></li>
+                  <li><a href="/sitemap.xml">Sitemap</a></li>
                 </ul>
               </div>
             </div>
@@ -587,7 +706,7 @@
       // hammenu
       function menuOnClick() {
         document.getElementById("menu-bar").classList.toggle("change");
-        document.getElementById("hammenu").classList.toggle("hammenuOpen");
+        // document.getElementById("hammenu").classList.toggle("hammenuOpen");
       }
 
       function scrollToLeft() {
@@ -598,6 +717,8 @@
         var elem = document.getElementById("crousalDiv");
         elem.scrollLeft += 350;
       }
+
+      //  swad horizonal scroll
     </script>
   </body>
 </html>

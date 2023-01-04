@@ -48,10 +48,28 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
+
+    <!-- jquery -->
+    <script src="js/jqery.js"></script>
   </head>
   <body>
+    <div class="topbar">
+      <ul class="list-unstyled m-0 d-flex justify-content-around">
+        <li>
+          <p class="m-0">
+            <span>For Reservation</span> - 8516017111 | 9981171071
+          </p>
+        </li>
+        <li>
+          <p class="m-0"><span>Restaurant </span> - 8516017222</p>
+        </li>
+        <li class="last">
+          <p class="m-0"><span>Support & Complain .</span> - 8516017333</p>
+        </li>
+      </ul>
+    </div>
     <nav
-      class="navbar navbarScrold d-flex align-items-center justify-content-between"
+      class="navbar d-flex align-items-center justify-content-between"
       id="navbar"
     >
       <div class="logo">
@@ -60,60 +78,91 @@
             src="assets/img/Logo.png"
             alt="thekamodersort logo"
             width="80px"
-        /></a>
+          />
+          The Kamoda Resort</a
+        >
       </div>
       <div class="navlinks">
         <ul class="list-unstyled d-flex p-0 m-0">
           <li class="me-4"><a href="/index.html">Home</a></li>
           <li class="me-4"><a href="/about.html">About</a></li>
           <li class="me-4"><a href="/rooms.html">Rooms</a></li>
+          <li class="me-4"><a href="/swad.html">Restaurant</a></li>
           <li class="me-4"><a href="/gallery.html">Gallery</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
       </div>
 
       <div id="menu">
-        <div id="menu-bar" onclick="menuOnClick()">
+        <div
+          id="menu-bar"
+          onclick="menuOnClick()"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#staticBackdrop"
+          aria-controls="staticBackdrop"
+        >
           <div id="bar1" class="bar"></div>
           <div id="bar2" class="bar"></div>
           <div id="bar3" class="bar"></div>
         </div>
       </div>
-      <div class="hammenu" id="hammenu">
-        <ul class="list-unstyled p-0 m-0">
-          <li class="me-5" onclick="menuOnClick()">
-            <a href="/index.html">Home</a>
-          </li>
-          <li class="me-5" onclick="menuOnClick()">
-            <a href="/about.html">About</a>
-          </li>
-          <li class="me-5" onclick="menuOnClick()">
-            <a href="/rooms.html">Rooms</a>
-          </li>
-          <li class="me-5" onclick="menuOnClick()">
-            <a href="/gallery.html">Gallery</a>
-          </li>
+      <div
+        class="offcanvas offcanvas-end"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+            onclick="menuOnClick()"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="hammenu" id="hammenu">
+            <ul class="list-unstyled p-0 m-0">
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/index.html">Home</a>
+              </li>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/about.html">About</a>
+              </li>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/rooms.html">Rooms</a>
+              </li>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/swad.html">Restaurant</a>
+              </li>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/gallery.html">Gallery</a>
+              </li>
 
-          <li class="me-5" onclick="menuOnClick()">
-            <a href="/contact.html">Contact</a>
-          </li>
-          <li class="me-5" onclick="menuOnClick()">
-            <a href="tel:9981171071"
-              ><div class="book">
-                <button>Book Now →</button>
-              </div></a
-            >
-          </li>
-        </ul>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/contact.html">Contact</a>
+              </li>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="tel:8516017111"
+                  ><div class="book">
+                    <button>Book Now →</button>
+                  </div></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
 
     <div class="contactPage">
-      <div class="img">
-        <img src="assets/glry/RoomsBackg.png" alt="thekamodaresort" />
-      </div>
-      <div class="locationBar">
-        <p>Home / <span>Contact</span></p>
+      <div
+        class="locationBar d-flex justify-content-between align-items-center"
+      >
+        <div class="name"><h1>Contact Us</h1></div>
+        <div class="location"><a href="/">Home</a> / Contact</div>
       </div>
       <section id="contact" class="contact">
         <div class="container aos-init aos-animate" data-aos="fade-up">
@@ -198,59 +247,6 @@
                 <div class="text-center">
                   <button type="submit" id="send">Send Message</button>
                 </div>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="staticBackdrop"
-                  data-bs-backdrop="static"
-                  data-bs-keyboard="false"
-                  tabindex="-1"
-                  aria-labelledby="staticBackdropLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <div class="text-center">
-                          <div
-                            class="spinner-border"
-                            role="status"
-                            id="loading"
-                          >
-                            <span class="visually-hidden">Loading...</span>
-                          </div>
-                          <div
-                            class="successMsg text-center mt-3 d-none"
-                            id="successMsg"
-                          >
-                            <p>
-                              Thank You For Getting In Touch! <br />
-                              We Will Get Back In Touch With You Soon! <br />
-                              <span style="font-weight: 600">
-                                Have a great day!</span
-                              >
-                            </p>
-                          </div>
-                          <div class="d-none" id="errMsg">
-                            <p style="font-size: 16px">
-                              Something Went Wrong ! Please Try After Sometime
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer d-none" id="closeBtn">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </form>
             </div>
           </div>
@@ -266,19 +262,19 @@
             <div class="col-sm d-flex justify-content-center mb-5">
               <div class="address w-75">
                 <h1>The kamoda resort</h1>
-                <h2>Banaras road Gandhinager, Ambikapur , Chhattisgrah</h2>
+                <h2>
+                  RK Nagar , Banaras road Gandhinager, Ambikapur , Chhattisgrah
+                </h2>
                 <div class="icons">
-                  <a href="#" class="me-3"
+                  <a
+                    href="https://www.facebook.com/thekamodaresort"
+                    class="me-3"
                     ><i class="fa-brands fa-facebook"></i
                   ></a>
-                  <a href="#" class="me-3"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                  <a href="#" class="me-3"
+                  <a
+                    href="https://www.instagram.com/thekamodaresort"
+                    class="me-3"
                     ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                  <a href="#" class="me-3"
-                    ><i class="fa-brands fa-youtube"></i
                   ></a>
                 </div>
               </div>
@@ -286,10 +282,15 @@
             <div class="col-sm d-flex justify-content-center mb-5">
               <div class="con w-75">
                 <h1>Contact</h1>
-                <p>9981171071 <span>( For Reservation )</span></p>
-                <p>8516017111 <span>( For Reservation )</span></p>
-                <p>8516017222 <span>( Restaurant )</span></p>
-                <p>8516017333 <span>( Support & Complain )</span></p>
+                <p>
+                  <span class="highLight">For Reservation </span> - 9981171071 |
+                  8516017111
+                </p>
+
+                <p><span class="highLight">Restaurant </span> - 8516017222</p>
+                <p>
+                  <span class="highLight">Support & Complain</span> - 8516017333
+                </p>
                 <p>thekamodaresort@gmail.com</p>
               </div>
             </div>
@@ -304,6 +305,9 @@
                   <li class="me-4"><a href="/rooms.html">Rooms</a></li>
                   <li class="me-4"><a href="/gallery.html">Gallery</a></li>
                   <li><a href="/contact.html">Contact</a></li>
+                  <li><a href="/terms.html">Terms & Conditions</a></li>
+                  <li><a href="/hotel-policy.html">Hotel-policy</a></li>
+                  <li><a href="/sitemap.xml">Sitemap</a></li>
                 </ul>
               </div>
             </div>
@@ -329,18 +333,18 @@
     >
 
     <a
-    href="https://wa.me/+918516017111"
-    class="whatsapp"
-    data-bs-toggle="tooltip"
-    data-bs-placement="left"
-    data-bs-title="Message Us ."
-  >
-    <div class="whatappPng">
-      <img src="assets/whatsapp.svg" alt="thekamodaresort" width="60"/>
-    </div>
-  </a>
+      href="https://wa.me/+918516017111"
+      class="whatsapp"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      data-bs-title="Message Us ."
+    >
+      <div class="whatappPng">
+        <img src="assets/whatsapp.svg" alt="thekamodaresort" width="60" />
+      </div>
+    </a>
 
-    <script src="js/aos/aos.js"></script>
+    <script src="aos/aos.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/contact.js"></script>
     <script>
@@ -349,6 +353,25 @@
       var loc = window.location.pathname;
 
       // show hide scrollTo tp
+
+      // show hide scrollTo tp
+      window.addEventListener(
+        "scroll",
+        function (event) {
+          var top = this.scrollY,
+            left = this.scrollX;
+          var nav = document.getElementById("navbar");
+
+          if (top >= 300) {
+            const list = nav.classList;
+            list.add("navbarScrold");
+          } else {
+            const list = nav.classList;
+            list.remove("navbarScrold");
+          }
+        },
+        false
+      );
 
       // hammenu
       function menuOnClick() {
@@ -365,5 +388,7 @@
         elem.scrollLeft += 350;
       }
     </script>
+
+    <!-- Modal -->
   </body>
 </html>

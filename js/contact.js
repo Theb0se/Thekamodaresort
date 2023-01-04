@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
         user_email: email,
         message: msg,
       },
-    };bhftih
+    };
     console.log(data);
 
     $("#staticBackdrop").modal("show");

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Josefin+Sans:wght@400;500;600&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:wght@200;300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&family=Roboto+Condensed:wght@300;400&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&family=Roboto+Condensed:wght@300;400&family=Satisfy&display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -20,6 +19,7 @@ body {
   --inter: "Inter", sans-serif;
   --funky: "Playfair Display", serif;
   --pacifico: "Pacifico", cursive;
+  --robotoconsider: "Roboto Condensed", sans-serif;
 }
 
 .text-justify {
@@ -45,26 +45,50 @@ a:hover {
   font-size: 14px;
 }
 
+.topbar {
+  padding: 5px 80px;
+  background-color: #000;
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+.topbar p {
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--white);
+  font-family: var(--robotoconsider);
+}
+
+.topbar ul li span {
+  color: var(--gold);
+}
+
 .logo a {
   font-size: 22px;
-  font-weight: 600;
-  color: #a3814f;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 .navbar {
-  position: fixed;
+  position: sticky;
+  top: 28px;
   background-color: transparent;
   padding: 8px 80px;
   z-index: 99999;
   width: 100%;
   background-color: var(--white);
-  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 58%);
   transition: 0.3s ease;
+  overflow: hidden;
+  border-bottom: 1px solid gray;
 }
 .navbarScrold {
   background-color: var(--white);
   box-shadow: 0 1px 8px 0 rgb(0 0 0 / 58%);
   transition: 0.3s ease;
+  border-bottom: none;
 }
 
 .navbar ul li {
@@ -154,15 +178,10 @@ a:hover {
 }
 
 .hammenu {
-  position: absolute;
-  width: 70vw;
+  width: 100%;
   background-color: #fff;
-  top: 0;
   height: 100vh;
   padding: 20px;
-  left: 2020px;
-  transition: 0.6s ease;
-  padding-top: 64px;
 }
 
 .hammenuOpen {
@@ -181,10 +200,14 @@ a:hover {
   font-size: 16px;
 }
 
-.carousel-item img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+/* locatin Bar */
+.locationBar {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 20px 80px;
+}
+.locationBar h1 {
+  margin-bottom: 0;
 }
 
 /* hero */
@@ -193,71 +216,69 @@ a:hover {
   /* margin-top: 62px; */
   width: 100%;
   height: calc(100vh);
+}
+
+.hero .carousel-item {
+  transition: opacity 1.5s ease-out;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .crousal-main {
   background-image: url(../assets/glry/herobg\ -\ Copy.jpg);
   background-size: cover;
-  /* background-position: center; */
+  background-position: center;
   background-repeat: no-repeat;
-  position: relative;
+}
+.hero .crousal-rooms {
+  background-image: url(../assets/glry/s16.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero .crousal-rest {
+  background-image: url(../assets/glry/restaurent.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .welcome {
-  padding: 2px 80px;
-  position: absolute;
+  padding: 10px;
   display: flex;
-  width: 100%;
-  height: calc(100vh);
-  background: linear-gradient(90deg, #d9d9d9 0%, rgba(217, 217, 217, 0) 69.87%);
+  top: 10vh;
+  width: 60vw;
+  background-color: #07070796;
+  border-radius: 7px;
+  margin-top: 62px;
 }
+.crousal-rest .welcome {
+  background-color: #d9d9d952;
+  color: #000 !important;
+}
+.crousal-rest .welcome .wc {
+  color: #000;
+}
+
 .welcome .wc {
   padding: 10px 20px;
-  color: var(--black);
-  width: 800px;
+  color: var(--white);
+  width: 100%;
   border-radius: 4px;
-  margin-top: 30vh;
 }
 .welcome .wc h1 {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 60px;
-  margin-bottom: 20px;
   text-transform: capitalize;
   font-size: 48px;
+  text-align: center;
 }
 
-.welcome .wc p {
-  font-family: var(--inter);
-  color: #000;
-  margin-bottom: 20px;
+.crousal-rest h3 {
   font-weight: 500;
-  font-size: 14px !important;
-}
-
-.welcome .callNow {
-  background-color: var(--black);
-  border: var(--black);
-  color: var(--white);
-  outline: none;
-  padding: 3px 16px;
-  margin-right: 20px;
-  border-radius: 3px;
-  font-weight: 600;
-}
-
-.welcome a {
-  color: var(--white);
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.welcome .Direction {
-  background-color: var(--gold);
-  color: #000;
-  border: var(--gold);
-  outline: none;
-  color: var(--black);
-  padding: 3px 16px;
-  font-weight: 600;
-  border-radius: 3px;
 }
 
 /* midbar */
@@ -304,6 +325,8 @@ a:hover {
 }
 .aboutus .heading h2 {
   font-size: 48px;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .aboutus img {
@@ -325,7 +348,7 @@ a:hover {
   max-width: 40vw;
 }
 .aboutDetails .text p {
-  font-family: var(--inter);
+  font-family: var(--robotoconsider);
   line-height: 21px;
   font-size: 14px;
   text-align: justify;
@@ -348,6 +371,12 @@ a:hover {
   margin-top: 10px;
   scroll-behavior: smooth;
   align-items: center;
+}
+
+@media screen and (min-width: 1700px) {
+  .weoffer .crousal {
+    justify-content: center;
+  }
 }
 
 .weoffer .crousal::-webkit-scrollbar {
@@ -392,6 +421,149 @@ a:hover {
   border-radius: 32px;
   color: var(--white);
   cursor: pointer;
+}
+
+/* wave */
+.waveUp {
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  top: 0;
+}
+.waveDown {
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  bottom: -10px;
+  transform: rotateX(180deg);
+  transform: rotateZ(180deg);
+}
+
+/* Restaurent */
+
+.swad {
+  margin-top: 60px;
+  padding: 100px 120px;
+  background: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.swad .logo img {
+  width: 150px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.swad .logo h1 {
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.swad .desc p {
+  font-family: var(--robotoconsider);
+  line-height: 22px;
+  text-align: justify;
+  width: 70vw;
+  font-size: 16px;
+}
+
+.swad .slider {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.swad .slider::-webkit-scrollbar {
+  display: none;
+}
+
+.swad .track {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  animation: scroll 20s linear infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+.swad .slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.swad .slide img {
+  width: 100%;
+  border: 3px solid var(--gold);
+}
+
+.swad .knowMorebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swad .knowMorebtn button {
+  border: none;
+  width: 250px;
+  padding: 8px;
+  border-radius: 7px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 5565;
+}
+
+.swad .knowMorebtn button a {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 700px) {
+  .swad {
+    padding-bottom: 200px !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+}
+
+@media screen and (min-width: 1500px) {
+  .swad .logo img {
+    margin-top: 150px;
+  }
+  .swad {
+    padding-bottom: 250px !important;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .swad .logo img {
+    margin-top: 200px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .swad {
+    padding-bottom: 350px !important;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .swad .logo img {
+    margin-top: 300px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 4));
+  }
 }
 
 /*  */
@@ -576,6 +748,10 @@ footer p {
   color: var(--white);
   font-size: 14px;
 }
+
+.footerServices .highLight {
+  color: var(--gold);
+}
 footer .copy {
   color: var(--white);
 }
@@ -583,7 +759,7 @@ footer .copy {
 .bookNow {
   position: fixed;
   right: 15px;
-  top: 120px;
+  top: 200px;
   z-index: 996;
   width: 60px;
   height: 60px;
@@ -622,30 +798,44 @@ footer .copy {
     border: 1px solid gainsboro;
     margin-bottom: 8px;
   }
-}
-
-@media screen and (max-width: 876px) {
-  #menu {
-    display: block;
-  }
-
-  .navbar {
-    padding: 8px 40px;
-  }
-  .aboutus,
-  .weoffer .heading,
-  .services,
-  .contact {
-    padding: 5px 40px;
+  .swad .desc p {
+    width: 80vw;
   }
   .navbar .navlinks {
     display: none;
   }
+  #menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  .navbar {
+    padding: 5px 40px;
+  }
+  .aboutus,
+  .weoffer .heading,
+  .services,
+  .contact,
+  .topbar {
+    padding: 5px 40px;
+  }
+  .swad {
+    padding: 100px 40px;
+  }
+  .locationBar {
+    padding: 20px 40px;
+  }
+
   .navbar .book {
     display: none;
   }
   .hammenu .book {
     display: block;
+  }
+
+  .welcome {
+    width: 70vw;
   }
 
   .aboutus .text {
@@ -670,6 +860,10 @@ footer .copy {
     max-width: 100%;
   }
 
+  .swad .desc p {
+    width: 95vw;
+  }
+
   .amin {
     flex-direction: column-reverse !important;
   }
@@ -678,26 +872,14 @@ footer .copy {
   }
 }
 @media screen and (max-width: 767px) {
-  .welcome {
-    background: linear-gradient(
-      360deg,
-      #d9d9d9 3.34%,
-      rgba(217, 217, 217, 0.42) 48.14%,
-      rgba(217, 217, 217, 0) 100%
-    );
-    align-items: flex-end;
-    padding: 2px 20px;
-  }
-
-  .welcome .wc {
-    margin-top: 0;
-    width: 90vw;
+  .logo a {
+    font-size: 20px;
   }
   .welcome .wc h1 {
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
   }
   .aboutus .heading h2 {
     font-size: 28px;
@@ -710,19 +892,34 @@ footer .copy {
 }
 
 @media screen and (max-width: 713px) {
+  .logo a {
+    font-size: 18px;
+  }
   .navbar {
     padding: 8px 20px;
   }
   .aboutus,
   .weoffer .heading,
-  .services {
+  .services,
+  .topbar,
+  .swad {
     padding: 5px 20px;
+  }
+  .swad {
+    padding: 100px 20px;
+  }
+  .locationBar {
+    padding: 20px;
+  }
+
+  .topbar p {
+    font-size: 12px;
   }
 
   .welcome {
-    top: 0;
-    padding-bottom: 50px;
+    width: 80vw;
   }
+
   .welcome .wc h5 {
     font-size: 16px;
   }
@@ -764,6 +961,9 @@ footer .copy {
 }
 
 @media screen and (max-width: 567px) {
+  .logo a {
+    font-size: 16px;
+  }
   .amin .row {
     display: block;
   }
@@ -774,14 +974,24 @@ footer .copy {
     border-radius: 0;
   }
   .welcome {
-    width: 100vw;
-    top: 30px;
-    height: calc(50vh - 62px);
-    padding-bottom: 10px;
+    width: 90vw;
   }
 
   .hero {
     height: calc(50vh - 62px);
+  }
+  .hero .carousel-item {
+    height: calc(50vh - 62px);
+  }
+
+  .hero .welcome h1 {
+    font-size: 22px !important;
+  }
+  .crousal-rest img {
+    width: 110px;
+  }
+  .topbar .last {
+    display: none;
   }
 }
 

@@ -1,0 +1,31 @@
+.terms {
+  padding: 5px 80px;
+}
+
+.terms p {
+  font-family: var(--robotoconsider);
+  font-size: 14px;
+}
+
+.terms .head {
+  font-size: 32px;
+  color: var(--gold);
+  margin-top: 16px;
+}
+
+.terms li {
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-family: var(--robotoconsider);
+}
+
+.terms li span {
+  color: var(--gold);
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 713px) {
+  .terms {
+    padding: 8px 20px;
+  }
+}
