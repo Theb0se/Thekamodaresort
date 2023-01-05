@@ -373,6 +373,11 @@ a:hover {
   align-items: center;
 }
 
+.offerItem .img img {
+  width: 300px;
+  height: 210px;
+}
+
 @media screen and (min-width: 1700px) {
   .weoffer .crousal {
     justify-content: center;
@@ -660,6 +665,57 @@ a:hover {
 
 .services .bbnone {
   border-bottom: none;
+}
+
+/* We Are Avilable */
+.weAreAvailable {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  background: linear-gradient(
+      rgba(235, 235, 235, 0.712),
+      rgba(14, 14, 17, 0.705)
+    ),
+    url(../assets/glry/26.jpg) fixed center center;
+}
+.weAreAvailable h1 {
+  margin-bottom: 40px;
+}
+
+.weAreAvailable .icon-box {
+  text-align: center;
+  border: 1px solid #ebebeb;
+  padding: 40px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.weAreAvailable .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+  transform: translateY(-10px);
+}
+
+.weAreAvailable .icon-box h4 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--gold);
+}
+.weAreAvailable .icon-box p {
+  font-family: var(--robotoconsider);
+  font-size: 14px;
+}
+.weAreAvailable .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
 }
 
 /* Contact */

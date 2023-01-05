@@ -9,6 +9,7 @@
 
 .swadMin .description {
   margin-top: 40px;
+  text-align: center;
 }
 .swadMin .description p {
   order: 0 none;
