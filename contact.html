@@ -209,17 +209,19 @@
                       name="name"
                       class="form-control"
                       id="user_name"
-                      required=""
+                      required="true"
+                      autocomplete="off"
                     />
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="name">Your Email</label>
+                    <label for="name">Phone Number</label>
                     <input
-                      type="email"
+                      type="tel"
                       class="form-control"
-                      name="email"
-                      id="email"
-                      required=""
+                      name="number"
+                      id="number"
+                      required="true"
+                      autocomplete="off"
                     />
                   </div>
                 </div>
@@ -230,7 +232,8 @@
                     class="form-control"
                     name="subject"
                     id="subject"
-                    required=""
+                    required="true"
+                    autocomplete="off"
                   />
                 </div>
                 <div class="form-group">
@@ -240,7 +243,8 @@
                     name="message"
                     id="message"
                     rows="10"
-                    required=""
+                    required="true"
+                    autocomplete="off"
                   ></textarea>
                 </div>
 
@@ -390,5 +394,45 @@
     </script>
 
     <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="text-center">
+              <div class="spinner-border" role="status" id="loading">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="successMsg text-center mt-3 d-none" id="successMsg">
+                <p>
+                  Thank You For Getting In Touch! <br />
+                  We Will Get Back In Touch With You Soon! <br />
+                  <span style="font-weight: 600"> Have a great day!</span>
+                </p>
+              </div>
+              <div class="d-none" id="errMsg">
+                <p style="font-size: 16px">
+                  Something Went Wrong ! Please Try After Sometime
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-none" id="closeBtn">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

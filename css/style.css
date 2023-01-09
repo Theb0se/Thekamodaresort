@@ -394,7 +394,7 @@ a:hover {
   position: relative;
 }
 
-.modal-content .btn-close{
+.modal-content .btn-close {
   position: absolute;
   left: 10px;
   top: 10px;
@@ -1075,3 +1075,12 @@ footer .copy {
 }
 
 /* smooth */
+
+@media screen and (max-width: 567px) {
+  .topbar p {
+    font-size: 10px;
+  }
+  .topbar {
+    padding: 5px 5px;
+  }
+}

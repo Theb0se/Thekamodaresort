@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 
     var name = $("#user_name").val();
     let sub = $("#subject").val();
-    let email = $("#email").val();
+    let number = $("#number").val();
     let msg = $("#message").val();
 
     var data = {
@@ -19,13 +19,13 @@ window.addEventListener("load", () => {
       template_params: {
         user_name: name,
         subject: sub,
-        user_email: email,
+        user_number: number,
         message: msg,
       },
     };
     console.log(data);
 
-    $("#staticBackdrop").modal("show");
+    $("#exampleModal").modal("show");
 
     $.ajax("https://api.emailjs.com/api/v1.0/email/send", {
       type: "POST",
