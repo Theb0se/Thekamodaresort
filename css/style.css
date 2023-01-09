@@ -377,6 +377,29 @@ a:hover {
   width: 300px;
   height: 210px;
 }
+.modal {
+  z-index: 1808888;
+  margin-top: 30px;
+}
+.modal .modal-header {
+  border-bottom: none;
+}
+.modal img {
+  width: 95%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal-content .btn-close{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 84654654;
+}
 
 @media screen and (min-width: 1700px) {
   .weoffer .crousal {

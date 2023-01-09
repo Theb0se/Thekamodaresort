@@ -46,6 +46,8 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- jquery -->
+    <script src="js/jqery.js"></script>
   </head>
   <body>
     <div class="topbar">
@@ -215,10 +217,7 @@
     >
       <div class="heading">
         <p>A little about us</p>
-        <h2>
-          LOCATED ON THE CALM PLACE OF AMBIKAPUR, <br />
-          A DELIGHTFUL EXPERIENCE
-        </h2>
+        <h2>LOCATED ON THE CALM PLACE OF AMBIKAPUR, A DELIGHTFUL EXPERIENCE</h2>
       </div>
       <div class="aboutDetails">
         <div class="img">
@@ -622,7 +621,7 @@
             <div class="icon">
               <img src="assets/img/meeting.png" alt="thekamodaresort" />
             </div>
-            <h4>Corporate / Alumani Meetings</h4>
+            <h4>Corporate / Alumini Meetings</h4>
             <p>
               we also offers hosting corporate meetings, formal and informal
               get-togethers, alumini meetings, or reunions. We strive to provide
@@ -783,6 +782,34 @@
       </div>
     </a>
 
+    <!-- Update Model -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div
+              class="updateimg d-flex align-items-center justify-content-center"
+            >
+              <img src="update.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="aos/aos.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
     <script>
@@ -794,9 +821,6 @@
       );
 
       AOS.init();
-
-      var loc = window.location.pathname;
-      console.log(loc);
 
       // show hide scrollTo tp
       window.addEventListener(
@@ -832,7 +856,11 @@
         elem.scrollLeft += 350;
       }
 
-      //  swad horizonal scroll
+      // update model
+
+      $(window).load(function () {
+        $("#exampleModal").modal("show");
+      });
     </script>
   </body>
 </html>
