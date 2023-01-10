@@ -826,8 +826,9 @@ footer p {
 .footerServices .highLight {
   color: var(--gold);
 }
-footer .copy {
-  color: var(--white);
+footer .copy,
+footer .copy a {
+  color: var(--white) !important;
 }
 
 .bookNow {
