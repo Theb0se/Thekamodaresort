@@ -13,7 +13,7 @@
     />
     <meta
       name="keywords"
-      content="best hotel in abmikapur, best resrot in ambikapur , hotel near mainpat , hotel near me , hotel in ambikapur"
+      content="best hotel in abmikapur, best resort in ambikapur , best resrot in ambikapur , hotel near mainpat , hotel near me , hotel in ambikapur"
     />
 
     <!-- favicon -->
@@ -44,10 +44,21 @@
     <!-- aos -->
     <link rel="stylesheet" href="aos/aos.css" />
 
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css" />
     <!-- jquery -->
     <script src="js/jqery.js"></script>
+    <script src="aos/aos.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="topbar">
@@ -61,7 +72,9 @@
           <p class="m-0"><span>Restaurant </span> - 8516017222</p>
         </li>
         <li class="last">
-          <p class="m-0"><span>Support & Complain .</span> - 8516017333</p>
+          <p class="m-0">
+            <span>Support & Complain .</span> - 8516017333 | 8516017444
+          </p>
         </li>
       </ul>
     </div>
@@ -162,7 +175,7 @@
         <div class="carousel-inner">
           <div
             class="carousel-item active crousal-main"
-            data-bs-interval="2700"
+            data-bs-interval="2500"
           >
             <div class="welcome" data-aos="zoom-out">
               <div class="wc text-center">
@@ -180,7 +193,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item crousal-rooms" data-bs-interval="2600">
+          <div class="carousel-item crousal-rooms" data-bs-interval="2500">
             <div class="welcome" data-aos="zoom-out">
               <div class="wc">
                 <h1>
@@ -189,7 +202,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item crousal-rest" data-bs-interval="4000">
+          <div class="carousel-item crousal-rest" data-bs-interval="2500">
             <div class="welcome" data-aos="zoom-out">
               <div class="wc text-center">
                 <img
@@ -205,6 +218,24 @@
             </div>
           </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
@@ -283,7 +314,7 @@
           </div>
           <div class="offerItem">
             <div class="img">
-              <img src="assets/glry/11.jpg" alt="kamoda room" />
+              <img src="assets/glry/lawn.webp" alt="kamoda room" />
             </div>
             <div class="text">
               <h1>Big Party Lawn</h1>
@@ -373,43 +404,46 @@
           </p>
         </div>
 
-        <div class="imges" data-aos="fade-up" data-aos-duration="5000">
-          <div class="slider" id="track">
-            <div class="track">
-              <div class="slide">
-                <img src="assets/glry/restaurent.jpg" alt="" />
+        <div class="imges mt-4 overflow-hidden" data-aos="fade-up">
+          <!-- Slider main container -->
+          <div class="swad-swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="assets/swad/1.webp" alt="thekamodaresort" />
               </div>
-              <div class="slide">
-                <img src="assets/glry/restaurent.jpg" alt="" />
+              <div class="swiper-slide">
+                <img src="assets/swad/2.webp" alt="thekamodaresort" />
               </div>
-              <div class="slide">
-                <img src="assets/glry/restaurent.jpg" alt="" />
+              <div class="swiper-slide">
+                <img src="assets/swad/3.webp" alt="thekamodaresort" />
               </div>
-              <div class="slide">
-                <img src="assets/glry/restaurent.jpg" alt="" />
+              <div class="swiper-slide">
+                <img src="assets/swad/4.webp" alt="thekamodaresort" />
               </div>
-              <div class="slide">
-                <img src="assets/glry/restaurent.jpg" alt="" />
+              <div class="swiper-slide">
+                <img src="assets/swad/5.webp" alt="thekamodaresort" />
               </div>
-
-              <!-- Doubled -->
-
-              <div class="slide">
-                <img src="assets/glry/restaurent.jpg" alt="" />
+              <div class="swiper-slide">
+                <img src="assets/swad/6.webp" alt="thekamodaresort" />
               </div>
-              <div class="slide">
-                <img src="assets/glry/restaurent.jpg" alt="" />
+              <div class="swiper-slide">
+                <img src="assets/swad/7.webp" alt="thekamodaresort" />
               </div>
-              <div class="slide">
-                <img src="assets/glry/restaurent.jpg" alt="" />
+              <div class="swiper-slide">
+                <img src="assets/swad/8.webp" alt="thekamodaresort" />
               </div>
-              <div class="slide">
-                <img src="assets/glry/restaurent.jpg" alt="" />
+              <div class="swiper-slide">
+                <img src="assets/swad/9.webp" alt="thekamodaresort" />
               </div>
-              <div class="slide">
-                <img src="assets/glry/restaurent.jpg" alt="" />
+              <div class="swiper-slide">
+                <img src="assets/swad/10.webp" alt="thekamodaresort" />
               </div>
             </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
 
@@ -714,6 +748,11 @@
                     class="me-3"
                     ><i class="fa-brands fa-instagram"></i
                   ></a>
+                  <a
+                    href="https://www.linkedin.com/company/thekamodaresort/"
+                    class="me-3"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -728,6 +767,7 @@
                 <p><span class="highLight">Restaurant </span> - 8516017222</p>
                 <p>
                   <span class="highLight">Support & Complain</span> - 8516017333
+                  | 8516017444
                 </p>
                 <p>thekamodaresort@gmail.com</p>
               </div>
@@ -754,7 +794,7 @@
       </div>
 
       <p class="copy text-center mt-3 whitecolor">
-        © Copyright <b>The kamoda Resort</b>. All Rights Reserved
+        © Copyright <b>The Kamoda Resort</b>. All Rights Reserved
       </p>
 
       <p class="text-center copy">
@@ -800,18 +840,40 @@
             aria-label="Close"
           ></button>
           <div class="modal-body">
-            <div
-              class="updateimg d-flex align-items-center justify-content-center"
-            >
-              <img src="update.jpg" alt="" />
+            <!-- Swiper -->
+            <div class="swiper-container">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div
+                    class="updateimg d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/Update/update.jpg" alt="" />
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div
+                    class="updateimg d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/Update/update2.jpg" alt="" />
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div
+                    class="updateimg d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/Update/update3.jpg" alt="" />
+                  </div>
+                </li>
+              </ul>
+              <!-- Add Pagination -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="aos/aos.js"></script>
-    <script src="js/bootstrap/bootstrap.js"></script>
     <script>
       const tooltipTriggerList = document.querySelectorAll(
         '[data-bs-toggle="tooltip"]'
@@ -856,10 +918,54 @@
         elem.scrollLeft += 350;
       }
 
+      // swad swiper
+      $(window).load(function () {
+        var mySwiper = new Swiper(".swad-swiper-container", {
+          loop: true,
+          speed: 1000,
+          autoplay: {
+            delay: 2000,
+          },
+
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 80,
+            depth: 200,
+            modifier: 1,
+            slideShadows: false,
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      });
+
       // update model
 
       $(window).load(function () {
-        $("#exampleModal").modal("show");
+        var swiper = new Swiper(".swiper-container", {
+          pagination: ".swiper-pagination",
+          slidesPerView: "auto",
+          paginationClickable: true,
+          spaceBetween: 0,
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+
+        const session = sessionStorage.getItem("isModel");
+        if (!session) {
+          sessionStorage.setItem("isModel", "Open");
+          $("#exampleModal").modal("show");
+        }
       });
     </script>
   </body>

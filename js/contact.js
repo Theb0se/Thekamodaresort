@@ -13,8 +13,8 @@ window.addEventListener("load", () => {
     let msg = $("#message").val();
 
     var data = {
-      service_id: "service_fwrt9js",
-      template_id: "template_my78pow",
+      service_id: "service_bae5ruq",
+      template_id: "template_ux3z35u",
       user_id: "Vkvlz1IH93sFNaoDG",
       template_params: {
         user_name: name,
