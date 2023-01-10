@@ -1041,7 +1041,7 @@ footer .copy {
 
 @media screen and (max-width: 567px) {
   .logo a {
-    font-size: 16px;
+    font-size: 15px;
   }
   .amin .row {
     display: block;
@@ -1077,10 +1077,19 @@ footer .copy {
 /* smooth */
 
 @media screen and (max-width: 567px) {
+  .navbar .logo img {
+    width: 50px;
+  }
+
   .topbar p {
     font-size: 10px;
   }
   .topbar {
     padding: 5px 5px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .navbar {
+    padding: 8px;
   }
 }
