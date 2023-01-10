@@ -510,6 +510,7 @@ a:hover {
   width: 100%;
   border: 2px solid var(--gold);
   border-radius: 6px;
+  height: 200px;
 }
 
 .swad .slide img {
