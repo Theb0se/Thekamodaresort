@@ -175,6 +175,7 @@
         <div class="carousel-inner">
           <div
             class="carousel-item active crousal-main"
+            id="CrousalWelcome"
             data-bs-interval="2500"
           >
             <div class="welcome" data-aos="zoom-out">
@@ -193,7 +194,11 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item crousal-rooms" data-bs-interval="2500">
+          <div
+            class="carousel-item crousal-rooms"
+            data-bs-interval="2500"
+            id="CrousalRooms"
+          >
             <div class="welcome" data-aos="zoom-out">
               <div class="wc">
                 <h1>
@@ -202,7 +207,11 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item crousal-rest" data-bs-interval="2500">
+          <div
+            class="carousel-item crousal-rest"
+            data-bs-interval="2500"
+            id="CrousalRest"
+          >
             <div class="welcome" data-aos="zoom-out">
               <div class="wc text-center">
                 <img
@@ -324,10 +333,7 @@
 
           <div class="offerItem">
             <div class="img">
-              <img
-                src="assets/swad/8.webp"
-                alt="kamoda room"
-              />
+              <img src="assets/swad/8.webp" alt="kamoda room" />
             </div>
             <div class="text">
               <h1>Multi cuisine Restaurant</h1>
@@ -823,57 +829,18 @@
     </a>
 
     <!-- Update Model -->
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-          <div class="modal-body">
-            <!-- Swiper -->
-            <div class="swiper-container">
-              <ul class="swiper-wrapper">
-                <li class="swiper-slide">
-                  <div
-                    class="updateimg d-flex align-items-center justify-content-center"
-                  >
-                    <img src="assets/Update/update.jpg" alt="" />
-                  </div>
-                </li>
-                <li class="swiper-slide">
-                  <div
-                    class="updateimg d-flex align-items-center justify-content-center"
-                  >
-                    <img src="assets/Update/update2.jpg" alt="" />
-                  </div>
-                </li>
-                <li class="swiper-slide">
-                  <div
-                    class="updateimg d-flex align-items-center justify-content-center"
-                  >
-                    <img src="assets/Update/update3.jpg" alt="" />
-                  </div>
-                </li>
-              </ul>
-              <!-- Add Pagination -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
+
+    <!-- model -->
+    <div class="popUp-model" id="popup-model">
+      <div class="model-popup" id="model-Popup">
+        <div class="popupImg" id="popImg">
+          <div class="close"><i class="fa-regular fa-xmark"></i></div>
         </div>
       </div>
     </div>
 
+    <!-- updatejs -->
+    <script src="js/update.js"></script>
     <script>
       const tooltipTriggerList = document.querySelectorAll(
         '[data-bs-toggle="tooltip"]'
@@ -892,6 +859,9 @@
             left = this.scrollX;
           var nav = document.getElementById("navbar");
 
+          if (top >= 50) {
+            $("#popup-model").removeClass("show-model");
+          }
           if (top >= 300) {
             const list = nav.classList;
             list.add("navbarScrold");
@@ -949,23 +919,14 @@
       // update model
 
       $(window).load(function () {
-        var swiper = new Swiper(".swiper-container", {
-          pagination: ".swiper-pagination",
-          slidesPerView: "auto",
-          paginationClickable: true,
-          spaceBetween: 0,
-          loop: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
+        // model
 
-        const session = sessionStorage.getItem("isModel");
-        if (!session) {
-          sessionStorage.setItem("isModel", "Open");
-          $("#exampleModal").modal("show");
-        }
+        $(document).click(function (event) {
+          console.log(event.target.parentElement.classList.value);
+          if (event.target.parentElement.classList.value !== "model-popup") {
+            $("#popup-model").removeClass("show-model");
+          }
+        });
       });
     </script>
   </body>

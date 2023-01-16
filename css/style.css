@@ -6,7 +6,6 @@ body {
   box-sizing: border-box;
   font-family: "Lora", serif;
   scroll-behavior: smooth;
-
   /* font-family: "Inter", sans-serif; */
   font-family: "Josefin Sans", sans-serif;
   color: #000;
@@ -377,6 +376,7 @@ a:hover {
   width: 300px;
   height: 210px;
 }
+
 .modal {
   z-index: 1808888;
   margin-top: 30px;
@@ -883,6 +883,7 @@ footer .copy a {
   font-size: 18px;
   background: #fff;
   width: 80%;
+  height: auto;
   border-right: 1px solid black;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -907,6 +908,56 @@ footer .copy a {
   padding: 5px;
 }
 
+/* modal */
+.popUp-model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999999;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  padding: 16px;
+}
+.popUp-model.show-model {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.popUp-model .popupImg {
+  width: 70%;
+  height: auto;
+  position: relative;
+}
+
+.popUp-model .popupImg img {
+  width: 100%;
+  height: auto;
+}
+.model-popup {
+  width: 700px;
+  padding: 16px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.model-popup .close {
+  position: absolute;
+  font-size: 32px;
+  color: #adadadab;
+  top: 8px;
+  right: 16px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 992px) {
   .services .mid,
   .services .side {
@@ -921,6 +972,9 @@ footer .copy a {
   }
   #menu {
     display: block;
+  }
+  .model-popup {
+    width: 500px;
   }
 }
 
@@ -1003,6 +1057,10 @@ footer .copy a {
   .services .mid,
   .services .side {
     border: 1px solid gainsboro;
+  }
+  .popUp-model .popupImg {
+    width: 80%;
+    height: auto;
   }
 }
 
@@ -1108,6 +1166,10 @@ footer .copy a {
   .topbar .last {
     display: none;
   }
+  .popUp-model .popupImg {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* smooth */
@@ -1122,6 +1184,9 @@ footer .copy a {
   }
   .topbar {
     padding: 5px 5px;
+  }
+  .model-popup {
+    width: 100%;
   }
 }
 @media screen and (max-width: 360px) {
