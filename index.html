@@ -176,7 +176,7 @@
           <div
             class="carousel-item active crousal-main"
             id="CrousalWelcome"
-            data-bs-interval="2500"
+            data-bs-interval="25000000"
           >
             <div class="welcome" data-aos="zoom-out">
               <div class="wc text-center">
@@ -715,7 +715,7 @@
           </div>
         </div>
         <div
-          class="col-lg col-md-6 d-flex align-items-center justify-content-center"
+          class="col-lg col-md d-flex align-items-center justify-content-center"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -809,7 +809,7 @@
       </p>
     </footer>
 
-    <a href="tel:8516017111">
+    <a href="/rooms.html">
       <div class="bookNow" data-aos="fade-left" data-aos-duration="1000">
         Book <br />
         Now
@@ -822,6 +822,7 @@
       data-bs-toggle="tooltip"
       data-bs-placement="left"
       data-bs-title="Message Us ."
+      id="whatsapp"
     >
       <div class="whatappPng">
         <img src="assets/whatsapp.svg" alt="thekamodaresort" width="60" />
@@ -838,6 +839,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Side Popup -->
 
     <!-- updatejs -->
     <script src="js/update.js"></script>
@@ -859,9 +862,6 @@
             left = this.scrollX;
           var nav = document.getElementById("navbar");
 
-          if (top >= 50) {
-            $("#popup-model").removeClass("show-model");
-          }
           if (top >= 300) {
             const list = nav.classList;
             list.add("navbarScrold");

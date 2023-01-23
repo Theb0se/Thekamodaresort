@@ -377,30 +377,6 @@ a:hover {
   height: 210px;
 }
 
-.modal {
-  z-index: 1808888;
-  margin-top: 30px;
-}
-.modal .modal-header {
-  border-bottom: none;
-}
-.modal img {
-  width: 95%;
-  height: 100%;
-  border-radius: 8px;
-}
-
-.modal-content {
-  position: relative;
-}
-
-.modal-content .btn-close {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  z-index: 84654654;
-}
-
 @media screen and (min-width: 1700px) {
   .weoffer .crousal {
     justify-content: center;
@@ -910,6 +886,7 @@ footer .copy a {
 
 /* modal */
 .popUp-model {
+  overflow: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -934,11 +911,14 @@ footer .copy a {
   width: 70%;
   height: auto;
   position: relative;
+  border: 3px solid #fff;
+  border-radius: 6px;
 }
 
 .popUp-model .popupImg img {
   width: 100%;
   height: auto;
+  max-height: 100vh;
 }
 .model-popup {
   width: 700px;
@@ -951,11 +931,18 @@ footer .copy a {
 
 .model-popup .close {
   position: absolute;
-  font-size: 32px;
-  color: #adadadab;
-  top: 8px;
-  right: 16px;
+  font-size: 20px;
+  color: #ffffff;
+  top: -10px;
+  right: -10px;
   cursor: pointer;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 
 @media screen and (max-width: 992px) {

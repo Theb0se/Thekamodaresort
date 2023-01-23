@@ -40,16 +40,32 @@
   color: var(--gold);
   margin-bottom: 10px;
 }
-.roomsPage .room .text a {
-  padding: 5px 24px;
+.roomsPage .room .text button {
+  padding: 3px 20px;
   color: #000;
   background-color: var(--gold);
   border-radius: 7px;
   font-weight: 500;
   font-family: var(--inter);
+  outline: none;
+  border: none;
+  font-size: 14px;
 }
-.roomsPage .room .text .decs{
-    font-size: 14px;
+.roomsPage .room .text .decs {
+  font-size: 14px;
+}
+.form-group {
+  padding-bottom: 16px;
+}
+.form-group label{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.modal input:focus,
+.modal textarea:focus {
+  border-color: var(--gold);
+  box-shadow: none;
 }
 
 /* media querry */

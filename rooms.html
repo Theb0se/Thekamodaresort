@@ -47,6 +47,8 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/rooms.css" />
+
+    <!-- javascript -->
   </head>
   <body>
     <div class="topbar">
@@ -232,7 +234,13 @@
               <div class="text">
                 <h1>Executive Room</h1>
 
-                <a href="#">Book Now</a>
+                <button
+                  id="execBtn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Book Now
+                </button>
                 <br />
                 <br />
                 <p class="text-justify decs">
@@ -311,11 +319,17 @@
               </div>
               <div class="text">
                 <h1>Premium Club Room</h1>
-                <a href="#">Book Now</a>
+                <button
+                  id="premiumClubBtn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Book Now
+                </button>
                 <br />
                 <br />
                 <p class="text-justify decs">
-                  The Super Deluxe Room is a spacious and elegant accommodation
+                  The Premium Club Room is a spacious and elegant accommodation
                   furnished with furniture. This air-conditioned room comes with
                   a single as well as double bed and all modern amenities needed
                   for a relaxing stay.
@@ -391,7 +405,13 @@
               </div>
               <div class="text">
                 <h1>Family Club Room</h1>
-                <a href="#">Book Now</a>
+                <button
+                  id="familyClubBtn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Book Now
+                </button>
                 <br />
                 <br />
                 <p class="text-justify decs">
@@ -471,7 +491,13 @@
               <div class="text">
                 <h1>The Kamoda Suite Room</h1>
 
-                <a href="#">Book Now</a>
+                <button
+                  id="kamodaSuitBtn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Book Now
+                </button>
                 <br />
                 <br />
                 <p class="text-justify decs">
@@ -584,8 +610,152 @@
       </div>
     </a>
 
+    <!-- Form Model -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      style="z-index: 99999999"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Make Your Reservation
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form role="form" class="php-email-form" id="form">
+              <div class="row">
+                <div class="form-group col">
+                  <label for="name">Room Type</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="roomType"
+                    required="true"
+                    autocomplete="off"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="user_name"
+                    required="true"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="number"
+                    id="number"
+                    required="true"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Arival Date</label>
+                  <input
+                    type="date"
+                    name="name"
+                    class="form-control"
+                    id="arivalDate"
+                    required="true"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Departure Date</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    name="number"
+                    id="depDate"
+                    required="true"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Number Of Guests</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name="subject"
+                  id="numberOfGuests"
+                  required="true"
+                  autocomplete="off"
+                />
+              </div>
+            </form>
+          </div>
+          <div id="fill" class="p-2 text-center" style="display: none">
+            please fill all required fields
+          </div>
+          <div id="successMsg" class="p-2 text-center" style="display: none">
+            Your Booking Request Registerd successfully <br />
+            We Will Contact You Shortly
+          </div>
+          <div
+            id="errorMsg"
+            class="p-2 text-center d-none"
+            style="color: rgb(192, 15, 15); display: none"
+          >
+            Ooops! Something Went Wrong
+            <br />
+            Please try again Leter
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm booknow"
+              id="BookNow"
+            >
+              <span id="booknowText"> Book Now</span>
+              <span id="loading" style="display: none">
+                <div class="spinner-border spinner-border-sm" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div></span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/aos/aos.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/jqery.js"></script>
+    <script src="js/rooms.js" defer></script>
     <script>
       AOS.init();
 
