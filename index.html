@@ -835,7 +835,9 @@
     <div class="popUp-model" id="popup-model">
       <div class="model-popup" id="model-Popup">
         <div class="popupImg" id="popImg">
-          <div class="close"><i class="fa-regular fa-xmark"></i></div>
+          <div class="close" id="modelCloseBtn">
+            <i class="fa-regular fa-xmark"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -921,11 +923,8 @@
       $(window).load(function () {
         // model
 
-        $(document).click(function (event) {
-          console.log(event.target.parentElement.classList.value);
-          if (event.target.parentElement.classList.value !== "model-popup") {
-            $("#popup-model").removeClass("show-model");
-          }
+        $("#modelCloseBtn").click(function (event) {
+          $("#popup-model").removeClass("show-model");
         });
       });
     </script>
