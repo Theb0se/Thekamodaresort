@@ -810,7 +810,7 @@ footer .copy a {
 .bookNow {
   position: fixed;
   right: 15px;
-  top: 200px;
+  top: 120px;
   z-index: 996;
   width: 60px;
   height: 60px;
@@ -911,14 +911,14 @@ footer .copy a {
   width: 70%;
   height: auto;
   position: relative;
-  border: 3px solid #fff;
-  border-radius: 6px;
 }
 
 .popUp-model .popupImg img {
   width: 100%;
   height: auto;
   max-height: 100vh;
+  border: 3px solid #fff;
+  border-radius: 6px;
 }
 .model-popup {
   width: 700px;
