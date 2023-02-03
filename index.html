@@ -842,7 +842,10 @@
       </div>
     </div>
 
-    <!-- Side Popup -->
+    <!-- Prealoader -->
+    <div id="preloader" id="preloader">
+      <div id="loader"></div>
+    </div>
 
     <!-- updatejs -->
     <script src="js/update.js"></script>
@@ -922,8 +925,9 @@
 
       $(window).load(function () {
         // model
+        $("#preloader").hide()
 
-        $("#modelCloseBtn").click(function (event) {
+        $("#modelCloseBtn").click(function () {
           $("#popup-model").removeClass("show-model");
         });
       });

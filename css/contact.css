@@ -168,10 +168,7 @@
   border-radius: 4px;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--gold);
-}
+ 
 
 .contact .php-email-form input {
   height: 44px;
