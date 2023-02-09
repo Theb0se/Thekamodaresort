@@ -34,13 +34,6 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
-      crossorigin="anonymous"
-    />
-
     <!-- aos -->
     <link rel="stylesheet" href="aos/aos.css" />
 
@@ -54,8 +47,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
@@ -261,7 +252,7 @@
       </div>
       <div class="aboutDetails">
         <div class="img">
-          <img src="assets/glry/31.jpg" alt="" />
+          <img src="assets/glry/31.jpg" alt="gallery" />
         </div>
         <div class="text">
           <p>
@@ -849,6 +840,9 @@
 
     <!-- updatejs -->
     <script src="js/update.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script>
       const tooltipTriggerList = document.querySelectorAll(
         '[data-bs-toggle="tooltip"]'
@@ -925,8 +919,7 @@
 
       $(window).load(function () {
         // model
-        $("#preloader").hide()
-
+        $("#preloader").hide();
         $("#modelCloseBtn").click(function () {
           $("#popup-model").removeClass("show-model");
         });

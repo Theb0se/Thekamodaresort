@@ -1192,6 +1192,7 @@ footer .copy a {
   background-color: var(--black);
   z-index: 99999999999999999999;
 }
+
 #loader {
   display: block;
   position: relative;

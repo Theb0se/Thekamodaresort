@@ -44,7 +44,6 @@ $(document).ready(function () {
   if (popup) {
   } else {
     $.get("https://brown-adder-coat.cyclic.app/updatePopup", function (data) {
-      // sessionStorage.setItem("popup", JSON.stringify(data));
       console.log(data);
     }).done(function (data) {
       var image1 = new Image();
