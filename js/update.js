@@ -48,6 +48,7 @@ $(document).ready(function () {
     }).done(function (data) {
       var image1 = new Image();
       image1.src = data[0].url;
+      image1.alt = "The kamoda popup Image"
       sessionStorage.setItem("popup", JSON.stringify(data));
       $("#popImg").append(image1);
       $("#popup-model").addClass("show-model");
