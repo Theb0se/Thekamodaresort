@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Contact - The Kamoda Resort | Best Hotel & Resort In Ambikapur
+      Feedback - The Kamoda Resort | Best Hotel & Resort In Ambikapur
       Chhattisgarh Chhattisgarh
     </title>
     <meta
@@ -48,6 +48,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/feedback.css" />
 
     <!-- jquery -->
     <script src="js/jqery.js"></script>
@@ -71,7 +72,7 @@
       </ul>
     </div>
     <nav
-      class="navbar d-flex align-items-center justify-content-between"
+      class="navbar d-flex align-items-center justify-content-between navbarScrold"
       id="navbar"
     >
       <div class="logo">
@@ -147,7 +148,7 @@
                 <a href="/contact.html">Contact</a>
               </li>
               <li class="me-5" onclick="menuOnClick()">
-                <a href="tel:8516017111"
+                <a href="/rooms.html"
                   ><div class="book">
                     <button>Book Now →</button>
                   </div></a
@@ -160,22 +161,13 @@
     </nav>
 
     <div class="contactPage">
-      <div
-        class="locationBar d-flex justify-content-between align-items-center"
-      >
-        <div class="name"><h1>Contact Us</h1></div>
-        <div class="location"><a href="/">Home</a> / Contact</div>
-      </div>
       <section id="contact" class="contact">
         <div class="container aos-init aos-animate" data-aos="fade-up">
           <div class="section-title">
-            <h2>Contact Us.</h2>
-            <p>
-              Do Have a question? Please don't hasitate to contact us.We will be
-              happy to answer all your questions and help you.
-            </p>
+            <h2>Feedback.</h2>
+            <p>Please Share Your Feedback with Us!</p>
           </div>
-          <div class="row">
+          <div class="row contactFlex">
             <div class="col-lg-5 d-flex align-items-stretch">
               <div class="info">
                 <div class="address">
@@ -207,6 +199,7 @@
             <div class="col-lg-7 mt-5 mt-lg-0 align-items-stretch formDiv">
               <form role="form" class="php-email-form" id="form">
                 <div class="row">
+                  <!-- NAME NUMBER -->
                   <div class="form-group col-md-6">
                     <label for="name">Your Name</label>
                     <input
@@ -219,7 +212,7 @@
                     />
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="name">Phone Number</label>
+                    <label for="number">Phone Number</label>
                     <input
                       type="tel"
                       class="form-control"
@@ -230,27 +223,187 @@
                     />
                   </div>
                 </div>
-                <div class="form-group">
-                  <label for="name">Subject</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    id="subject"
-                    required="true"
-                    autocomplete="off"
-                  />
+                <!-- DURATION -->
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="checkin">Check-in Date</label>
+                    <input
+                      type="date"
+                      name="checkin"
+                      class="form-control"
+                      id="checkin"
+                      required="true"
+                      autocomplete="off"
+                      maxlength="12"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="duration"
+                      >Duration of you stay ( In Days )</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="duration"
+                      id="duration"
+                      required="true"
+                      autocomplete="off"
+                      max="30"
+                    />
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="name">Message</label
-                  ><textarea
-                    class="form-control"
-                    name="message"
-                    id="message"
-                    rows="10"
-                    required="true"
-                    autocomplete="off"
-                  ></textarea>
+
+                <!-- hear about us -->
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="hear_About"
+                      >How did you hear about our hotel?</label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      required
+                      id="hear_About"
+                      name="hear_About"
+                    >
+                      <option selected value="Friends and Family">
+                        Friends and Family
+                      </option>
+                      <option value="Social Media">Social Media</option>
+                      <option value="Adds">Adds</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="reservationType"
+                      >How did you make your reservation?</label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="reservationType"
+                      name="reservationType"
+                    >
+                      <option value="online" selected>Online</option>
+                      <option value="offline">Offline</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- purpose -->
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="porpose"
+                      >What was the purpose of your visit?</label
+                    >
+                    <input
+                      type="text"
+                      name="porpose"
+                      class="form-control"
+                      id="porpose"
+                      required="true"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+
+                <!-- rate -->
+                <label for="serviceQuality" class="mt-4"
+                  >How Would you rate these :-
+                </label>
+                <div class="row mt-2">
+                  <div class="form-group col-md-6">
+                    <label for="serviceQuality">Service Quality</label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      name="serviceQuality"
+                      id="serviceQuality"
+                    >
+                      <option value="Excellent" selected>Excellent</option>
+                      <option value="Good">Good</option>
+                      <option value="Setisfied">Setisfied</option>
+                      <option value="Poor">Poor</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="Cleanliness">Cleanliness</label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="Cleanliness"
+                      name="Cleanliness"
+                    >
+                      <option value="Excellent" selected>Excellent</option>
+                      <option value="Good">Good</option>
+                      <option value="Setisfied">Setisfied</option>
+                      <option value="Poor">Poor</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="form-group col-md-6">
+                    <label for="food">Food</label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="food"
+                      name="food"
+                    >
+                      <option value="Excellent" selected>Excellent</option>
+                      <option value="Good">Good</option>
+                      <option value="Setisfied">Setisfied</option>
+                      <option value="Poor">Poor</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="Staff">Staff </label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      name="Staff"
+                      id="Staff"
+                    >
+                      <option value="Excellent" selected>Excellent</option>
+                      <option value="Good">Good</option>
+                      <option value="Setisfied">Setisfied</option>
+                      <option value="Poor">Poor</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="form-group col-md-6">
+                    <label for="overAll_exp"
+                      >Overall Experience in our hote</label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      name="overAll_exp"
+                      id="overAll_exp"
+                    >
+                      <option value="Excellent" selected>Excellent</option>
+                      <option value="Very Good">Very Good</option>
+                      <option value="Good">Good</option>
+                      <option value="Setisfied">Setisfied</option>
+                      <option value="Poor">Poor</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="form-group">
+                    <label for="suggestion">Any other suggestion for us?</label
+                    ><textarea
+                      class="form-control"
+                      name="suggestion"
+                      id="suggestion"
+                      rows="4"
+                      required="true"
+                      autocomplete="off"
+                    ></textarea>
+                  </div>
                 </div>
 
                 <div class="text-center">
@@ -362,32 +515,13 @@
 
     <script src="aos/aos.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="js/feedback.js"></script>
     <script>
       AOS.init();
 
       var loc = window.location.pathname;
 
       // show hide scrollTo tp
-
-      // show hide scrollTo tp
-      window.addEventListener(
-        "scroll",
-        function (event) {
-          var top = this.scrollY,
-            left = this.scrollX;
-          var nav = document.getElementById("navbar");
-
-          if (top >= 300) {
-            const list = nav.classList;
-            list.add("navbarScrold");
-          } else {
-            const list = nav.classList;
-            list.remove("navbarScrold");
-          }
-        },
-        false
-      );
 
       // hammenu
       function menuOnClick() {

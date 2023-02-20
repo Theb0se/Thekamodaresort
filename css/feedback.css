@@ -1,0 +1,30 @@
+.contact .php-email-form label {
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea,
+.contact .php-email-form select {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea,
+.contact .php-email-form select {
+  height: 28px;
+  padding: 0.175rem 2.25rem 0.175rem 0.75rem;
+}
+
+@media screen and (max-width: 992px) {
+  .contact .contactFlex {
+    flex-direction: column-reverse;
+  }
+  .contact .formDiv {
+    margin-top: 0 !important;
+  }
+}
