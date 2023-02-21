@@ -805,6 +805,7 @@ footer p {
 footer .copy,
 footer .copy a {
   color: var(--white) !important;
+  font-size: 12px;
 }
 
 .bookNow {
@@ -1156,6 +1157,9 @@ footer .copy a {
   .popUp-model .popupImg {
     width: 100%;
     height: auto;
+  }
+  .footerServices .useful li {
+    margin-bottom: 10px;
   }
 }
 
