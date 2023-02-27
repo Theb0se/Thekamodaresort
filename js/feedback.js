@@ -42,7 +42,7 @@ window.addEventListener("load", () => {
     let overAll_exp = $("#overAll_exp").val();
     let suggestion = $("#suggestion").val();
 
-    let data = {
+    const data = {
       name: name,
       number: number,
       checkin: checkIn_date,
@@ -65,15 +65,21 @@ window.addEventListener("load", () => {
     let server = "https://brown-adder-coat.cyclic.app/feedback";
 
     // axios
+    let axiosConfig = {
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+    };
     axios
-      .post(server, data)
+      .post(server, data, axiosConfig)
       .then(function (response) {
         $("#loading").hide();
         $("#successMsg").removeClass("d-none");
         $("#closeBtn").removeClass("d-none");
       })
       .catch(function (error) {
-        console.log("Oops... " + JSON.stringify(error));
+        console.log(error);
         $("#loading").hide();
         $("#errMsg").removeClass("d-none");
         $("#closeBtn").removeClass("d-none");

@@ -91,6 +91,7 @@
           <li class="me-4"><a href="/about.html">About</a></li>
           <li class="me-4"><a href="/rooms.html">Rooms</a></li>
           <li class="me-4"><a href="/swad.html">Restaurant</a></li>
+          <li class="me-4"><a href="/events.html">Events & Meetings</a></li>
           <li class="me-4"><a href="/gallery.html">Gallery</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
@@ -139,6 +140,9 @@
               </li>
               <li class="me-5" onclick="menuOnClick()">
                 <a href="/swad.html">Restaurant</a>
+              </li>
+              <li class="me-5" onclick="menuOnClick()">
+                <a href="/events.html">Events & Meetings</a>
               </li>
               <li class="me-5" onclick="menuOnClick()">
                 <a href="/gallery.html">Gallery</a>
@@ -208,7 +212,7 @@
                       class="form-control"
                       id="user_name"
                       required="true"
-                      autocomplete="off"
+                      
                     />
                   </div>
                   <div class="form-group col-md-6">
@@ -219,7 +223,7 @@
                       name="number"
                       id="number"
                       required="true"
-                      autocomplete="off"
+                      
                     />
                   </div>
                 </div>
@@ -233,7 +237,7 @@
                       class="form-control"
                       id="checkin"
                       required="true"
-                      autocomplete="off"
+                      
                       maxlength="12"
                     />
                   </div>
@@ -247,7 +251,7 @@
                       name="duration"
                       id="duration"
                       required="true"
-                      autocomplete="off"
+                      
                       max="30"
                     />
                   </div>
@@ -308,7 +312,7 @@
                       name="other-booking-type"
                       class="form-control"
                       id="other-booking-type"
-                      autocomplete="off"
+                      
                     />
                   </div>
                   <div class="form-group col-md-6">
@@ -321,7 +325,7 @@
                       class="form-control"
                       id="porpose"
                       required="true"
-                      autocomplete="off"
+                      
                     />
                   </div>
                 </div>
@@ -417,7 +421,7 @@
                       name="suggestion"
                       id="suggestion"
                       rows="4"
-                      autocomplete="off"
+                      
                     ></textarea>
                   </div>
                 </div>
@@ -488,6 +492,9 @@
                   <li class="me-4"><a href="/about.html">About</a></li>
                   <li class="me-4"><a href="/rooms.html">Rooms</a></li>
                   <li class="me-4"><a href="/gallery.html">Gallery</a></li>
+                  <li class="me-4">
+                    <a href="/events.html">Events & Meetings</a>
+                  </li>
                   <li><a href="/contact.html">Contact</a></li>
                   <li><a href="/terms.html">Terms & Conditions</a></li>
                   <li><a href="/hotel-policy.html">Hotel-policy</a></li>
@@ -543,7 +550,7 @@
       // show hide scrollTo tp
 
       // hammenu
-      
+
       function menuOnClick() {
         document.getElementById("menu-bar").classList.toggle("change");
         document.getElementById("hammenu").classList.toggle("hammenuOpen");
