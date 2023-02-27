@@ -1,4 +1,16 @@
 window.addEventListener("load", () => {
+  $("#reservationType").change(function () {
+    let reservationType = $("#reservationType").val();
+
+    if (reservationType === "Others") {
+      $("#otherReservationInput").removeClass("d-none");
+      $("#other-booking-type").attr("required", "true");
+    } else {
+      $("#otherReservationInput").addClass("d-none");
+      $("#other-booking-type").removeAttr("required");
+    }
+  });
+
   $("#form").submit(function (e) {
     $("#successMsg").addClass("d-none");
     $("#loading").show();
@@ -11,7 +23,17 @@ window.addEventListener("load", () => {
     let checkIn_date = $("#checkin").val();
     let duration = $("#duration").val();
     let hear_About = $("#hear_About").val();
-    let reservationType = $("#reservationType").val();
+    // reservation type
+    function type() {
+      let type = $("#reservationType").val();
+
+      if (type === "Others") {
+        return $("#other-booking-type").val();
+      } else {
+        return $("#reservationType").val();
+      }
+    }
+
     let porpose = $("#porpose").val();
     let serviceQuality = $("#serviceQuality").val();
     let Cleanliness = $("#Cleanliness").val();
@@ -21,57 +43,40 @@ window.addEventListener("load", () => {
     let suggestion = $("#suggestion").val();
 
     let data = {
-      name,
-      number,
-      checkIn_date,
-      duration,
-      hear_About,
-      reservationType,
-      porpose,
-      serviceQuality,
-      Cleanliness,
-      food,
-      Staff,
-      overAll_exp,
-      suggestion,
+      name: name,
+      number: number,
+      checkin: checkIn_date,
+      duration: duration,
+      hearAbout: hear_About,
+      ReservationType: type(),
+      VisitPurpose: porpose,
+      ServiceQuality: serviceQuality,
+      Cleanliness: Cleanliness,
+      Food: food,
+      StaffBehaviour: Staff,
+      OverallExperience: overAll_exp,
+      OtherSuggestion: suggestion,
     };
 
     console.log(data);
 
-    //   var data = {
-    //     service_id: "service_bae5ruq",
-    //     template_id: "template_ux3z35u",
-    //     user_id: "Vkvlz1IH93sFNaoDG",
-    //     template_params: {
-    //       user_name: name,
-    //       subject: sub,
-    //       user_number: number,
-    //       message: msg,
-    //     },
-    //   };
-    //   console.log(data);
+    $("#exampleModal").modal("show");
+    let loacl = "http://localhost:8080/feedback";
+    let server = "https://brown-adder-coat.cyclic.app/feedback";
 
-    //   $("#exampleModal").modal("show");
-
-    //   $.ajax("https://api.emailjs.com/api/v1.0/email/send", {
-    //     type: "POST",
-    //     data: JSON.stringify(data),
-    //     contentType: "application/json",
-    //   })
-    //     .done(function () {
-    //       $("#loading").hide();
-    //       $("#successMsg").removeClass("d-none");
-    //       $("#closeBtn").removeClass("d-none");
-    //       $("#user_name").val("");
-    //       $("#subject").val("");
-    //       $("#email").val("");
-    //       $("#message").val("");
-    //     })
-    //     .fail(function (error) {
-    //       console.log("Oops... " + JSON.stringify(error));
-    //       $("#loading").hide();
-    //       $("#errMsg").removeClass("d-none");
-    //       $("#closeBtn").removeClass("d-none");
-    //     });
+    // axios
+    axios
+      .post(server, data)
+      .then(function (response) {
+        $("#loading").hide();
+        $("#successMsg").removeClass("d-none");
+        $("#closeBtn").removeClass("d-none");
+      })
+      .catch(function (error) {
+        console.log("Oops... " + JSON.stringify(error));
+        $("#loading").hide();
+        $("#errMsg").removeClass("d-none");
+        $("#closeBtn").removeClass("d-none");
+      });
   });
 });

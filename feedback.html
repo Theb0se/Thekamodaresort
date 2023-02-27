@@ -285,15 +285,32 @@
                       id="reservationType"
                       name="reservationType"
                     >
-                      <option value="online" selected>Online</option>
-                      <option value="offline">Offline</option>
-                      <option value="Other">Other</option>
+                      <option value="online" selected>Offline</option>
+                      <option value="offline">Makemytrip</option>
+                      <option value="Goibibo">Goibibo</option>
+                      <option value="Booking.com">Booking.com</option>
+                      <option value="Agoda">Agoda</option>
+                      <option value="Trip Adviser">Trip Adviser</option>
+                      <option value="Others">Others</option>
                     </select>
                   </div>
                 </div>
 
                 <!-- purpose -->
                 <div class="row">
+                  <div
+                    class="form-group col-md-6 d-none"
+                    id="otherReservationInput"
+                  >
+                    <label for="porpose">Please Enter Booking Type?</label>
+                    <input
+                      type="text"
+                      name="other-booking-type"
+                      class="form-control"
+                      id="other-booking-type"
+                      autocomplete="off"
+                    />
+                  </div>
                   <div class="form-group col-md-6">
                     <label for="porpose"
                       >What was the purpose of your visit?</label
@@ -516,6 +533,7 @@
 
     <script src="aos/aos.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/feedback.js"></script>
     <script>
       AOS.init();
@@ -525,6 +543,7 @@
       // show hide scrollTo tp
 
       // hammenu
+      
       function menuOnClick() {
         document.getElementById("menu-bar").classList.toggle("change");
         document.getElementById("hammenu").classList.toggle("hammenuOpen");
@@ -557,8 +576,10 @@
               </div>
               <div class="successMsg text-center mt-3 d-none" id="successMsg">
                 <p>
-                  Thank You For Getting In Touch! <br />
-                  We Will Get Back In Touch With You Soon! <br />
+                  Thank you for taking the time to send us your valuable
+                  feedback.
+                  <br />
+                  we're grateful for your feedback. Thank you,
                   <span style="font-weight: 600"> Have a great day!</span>
                 </p>
               </div>
