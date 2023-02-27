@@ -49,6 +49,7 @@ $("#BookNow").click(function () {
   const arival = $("#arivalDate").val();
   const departure = $("#depDate").val();
   const numberOfGuests = $("#numberOfGuests").val();
+  const email = $("#email").val();
 
   var data = {
     service_id: "service_bae5ruq",
@@ -57,12 +58,16 @@ $("#BookNow").click(function () {
     template_params: {
       user_name: userName,
       user_number: number,
+      user_email: email,
       room_type: type,
       arrival: arival,
       Departure: departure,
       number_guests: numberOfGuests,
     },
   };
+
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  $("#successMsg").hide();
 
   if (
     !type ||
@@ -73,6 +78,9 @@ $("#BookNow").click(function () {
     !numberOfGuests
   ) {
     $("#fill").show();
+  } else if (email && !email.match(mailformat)) {
+    $("#fill").show();
+    $("#fill").text("Please Enter Correct Email Address!");
   } else {
     $("#successMsg").hide();
     $("#errorMsg").hide();
@@ -92,6 +100,7 @@ $("#BookNow").click(function () {
         $("#arivalDate").val("");
         $("#depDate").val("");
         $("#numberOfGuests").val("");
+        $("#email").val("");
       })
       .fail(function (error) {
         $("#loading").hide();
