@@ -298,6 +298,57 @@
       </div>
     </section>
 
+    <!-- Clients -->
+    <div class="clients">
+      <h3 class="text-center">Our <span>Clients</span></h3>
+      <!-- Slider main container -->
+      <div class="clients-swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="assets/clients/cggov.png" alt="thekamodaresort" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/clients/diler.jfif" alt="thekamodaresort" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/clients/hdfc.jpg" alt="thekamodaresort" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/clients/ashirwad Pipes.png"
+              alt="thekamodaresort"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/clients/iocl.jpg" alt="thekamodaresort" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/clients/sbi genral insuremnce.jfif"
+              alt="thekamodaresort"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/clients/rotery.png" alt="thekamodaresort" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/clients/sbi.jpg" alt="thekamodaresort" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/clients/uc.jpg" alt="thekamodaresort" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/clients/lic.jpg" alt="thekamodaresort" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/clients/crgb.jfif" alt="thekamodaresort" />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- we offer -->
     <section class="weoffer" data-aos="fade-up" data-aos-duration="1000">
       <div class="heading">
@@ -953,6 +1004,26 @@
         });
       });
 
+      $(window).load(function () {
+        var mySwiper = new Swiper(".clients-swiper-container", {
+          loop: true,
+          speed: 1000,
+          autoplay: {
+            delay: 1000,
+          },
+
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 80,
+            depth: 200,
+            modifier: 1,
+            slideShadows: false,
+          },
+        });
+      });
       // update model
 
       $(window).load(function () {

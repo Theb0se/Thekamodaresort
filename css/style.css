@@ -427,6 +427,51 @@ a:hover {
   cursor: pointer;
 }
 
+
+/* clients */
+.clients {
+  margin-top: 100px;
+overflow: hidden;
+}
+.clients h3 span {
+  color: var(--gold);
+}
+.clients h3 {
+  font-size: 32px;
+}
+
+.clients-swiper-container {
+  width: 100%;
+  padding-top: px;
+  padding-bottom: 50px;
+}
+.clients-swiper-container .swiper-wrapper{
+  align-items: center;
+}
+.clients .swiper-slide {
+  width: 100px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 40px;
+}
+.clients .swiper-slide img {
+  width: 100%;
+  border-radius: 6px;
+  height: auto;
+}
+
+.clients .slide img {
+  width: 100%;
+  border: 3px solid var(--gold);
+}
+.clients .swiper-button-next::after,
+.clients .swiper-button-prev::after {
+  font-size: 32px;
+  color: var(--black);
+  background-color: transparent !important;
+  padding: 5px;
+}
+
 /* wave */
 .waveUp {
   position: absolute;

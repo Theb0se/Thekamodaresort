@@ -5,6 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+background-attachment: fixed;
 }
 .eventContainer {
   padding: 20px 80px;
